@@ -1,26 +1,45 @@
 # Image and font credits — 01 Cornerpost Spine & Movement (fictional demo)
 
 All photographs are from Pexels under the **Pexels licence** (free commercial use, modification allowed,
-no attribution required; recorded here for provenance). Every file was cropped to its slot ratio and
-given one shared grade: blue/teal/green hues desaturated, a slight warm lift toward the shell ground.
-None shows a person, a child, a body, an X-ray or spine model, or a legible brand mark.
-⛔ All stock is replaced by the clinic's own photography before launch (L13).
+no attribution required; recorded here for provenance). Each was vetted by eye on a contact sheet
+(2026-11-04 rebuild): adults only, no watermark, no legible brand mark, no obvious AI artefacts.
+Files were cropped server-side to the slot ratio via the Pexels CDN and saved as webp in two widths.
+People are never named on the site; team cards show role titles only. Photographer names were not
+retrieved (Pexels photo pages block scripted requests).
 
-| Slot | File | Pexels ID / URL | Photographer | What is in frame |
-|---|---|---|---|---|
-| HERO 4:5 | img/hero-room-640/1200.webp | 7789616 — https://www.pexels.com/photo/7789616/ | not recorded (Pexels page blocks automated fetch) | Empty white room: padded fold-out table, desk, orange chair, window with vertical blinds |
-| ROOM 01 3:2 | img/waiting-area-800/1400.webp | 19921278 — https://www.pexels.com/photo/19921278/ | not recorded | Row of empty tan upholstered chairs along a window in a corridor (closest honest match for "waiting area") |
-| ROOM 02 3:2 | img/exercise-bay-800/1400.webp | 11075080 — https://www.pexels.com/photo/11075080/ | Caio (per search listing) | Empty exercise room, parquet floor, padded benches, strap frame, small trampoline; cropped to exclude a branded exercise bike |
-| DETAIL 01 1:1 | img/detail-couch-480/900.webp | 263201 — https://www.pexels.com/photo/263201/ | not recorded | Empty white examination couch with a two-step stool (no paper roll visible — closest match) |
-| DETAIL 02 1:1 | img/detail-towels-480/900.webp | 7691101 — https://www.pexels.com/photo/7691101/ | ROMAN ODINTSOV (per search listing) | Stack of folded white towels on a white surface (on a table, not a shelf) |
-| DETAIL 03 1:1 | img/detail-bands-480/900.webp | 6740823 — https://www.pexels.com/photo/6740823/ | not recorded | Two orange flat exercise bands and two coiled straps on a rubber floor (laid flat, not on a hook — closest match); cropped to exclude a smartwatch and shoes |
-| DETAIL 04 1:1 | img/detail-clipboard-480/900.webp | 8250906 — https://www.pexels.com/photo/8250906/ | not recorded | Clipboard with blank brown paper, nothing written on it |
-| BUILDING 16:9 | img/frontage-960/1800.webp | 34896778 — https://www.pexels.com/photo/34896778/ | Lesli Whitecotton (per search listing) | White building front, wooden door under a small canopy, two windows, potted shrubs. The house number beside the door was retouched out |
-| CORRIDOR 2:3 | img/corridor-600/1000.webp | 6207362 — https://www.pexels.com/photo/6207362/ | not recorded | Long empty corridor, dark door frames, tiled floor (doors not numbered — numbers would be legible text) |
-| TEAM 01–03 4:5 | — | — | — | Labelled empty frames by design. No photograph |
+| File(s) in `img/` | Ratio | Pexels ID / URL | What is in frame |
+|---|---|---|---|
+| hero-clinician-560/1000 | 4:5 | 8460157 — https://www.pexels.com/photo/8460157/ | Smiling grey-haired clinician in blue scrubs, stethoscope, arms folded, framed certificates (illegible) behind |
+| assess-shoulder-480/900 | 4:5 | 20860585 — https://www.pexels.com/photo/20860585/ | Physical therapist in light-blue scrubs guiding a young man's shoulder stretch |
+| hip-mobility-600/1100 | 3:2 | 20860592 — https://www.pexels.com/photo/20860592/ | Therapist moving a client's leg through a side-lying hip exercise on a blue table |
+| step-neck-240/480 | 1:1 | 20860589 — https://www.pexels.com/photo/20860589/ | Therapist assessing a client's neck as he bends his head forward |
+| step-jaw-240/480 | 1:1 | 20860605 — https://www.pexels.com/photo/20860605/ | Therapist supporting a client's head and jaw during a neck assessment |
+| step-shoulder-240/480 | 1:1 | 20860596 — https://www.pexels.com/photo/20860596/ | Therapist guiding a cross-body shoulder stretch |
+| step-mat-240/480 | 1:1 | 20860613 — https://www.pexels.com/photo/20860613/ | Two people doing a floor stretch on mats in a bright exercise room |
+| appointment-smile-520/960 | 4:5 | 5794035 — https://www.pexels.com/photo/5794035/ | Therapist and a laughing client during a shoulder treatment, window behind |
+| blog-taping-480/900 | 3:2 | 5794038 — https://www.pexels.com/photo/5794038/ | Therapist applying blue kinesiology tape along a client's lower back |
+| blog-ankle-480/900 | 3:2 | 20860612 — https://www.pexels.com/photo/20860612/ | Close-up of a therapist's hands assessing a client's foot and ankle |
+| blog-hamstring-480/900 | 3:2 | 5794009 — https://www.pexels.com/photo/5794009/ | Therapist guiding a client's leg-raise exercise on a treatment table |
+| team-chiro-400/760 | 4:5 | 5888149 — https://www.pexels.com/photo/5888149/ | Smiling man in navy clinical tunic with stethoscope, plain light background |
+| team-pt-400/760 | 4:5 | 15752232 — https://www.pexels.com/photo/15752232/ | Woman in white coat, arms folded, plain background |
+| team-sports-400/760 | 4:5 | 3714743 — https://www.pexels.com/photo/3714743/ | Smiling woman in white coat, side-on, framed prints behind |
+| team-coordinator-400/760 | 4:5 | 15641079 — https://www.pexels.com/photo/15641079/ | Smiling woman in white coat and teal scrubs holding a folder, white background |
+| page-first-visit-560/1000 | 4:3 | 5794044 — https://www.pexels.com/photo/5794044/ | Therapist in a white shirt at the head of a treatment table |
+| page-care-560/1000 | 4:3 | 5794020 — https://www.pexels.com/photo/5794020/ | Therapist's hands on the head and upper back of a client lying face down |
+| page-fees-560/1000 | 4:3 | 5794033 — https://www.pexels.com/photo/5794033/ | Therapist seated at the head of a table, treating a client's upper back |
+| page-book-560/1000 | 4:3 | 5794028 — https://www.pexels.com/photo/5794028/ | Therapist bending a client's leg into a hamstring/hip stretch |
+| page-contact-560/1000 | 4:3 | 5794010 — https://www.pexels.com/photo/5794010/ | Therapist mobilizing the leg of a client lying on her side |
+| page-about-560/1000 | 4:3 | 5794019 — https://www.pexels.com/photo/5794019/ | Therapist bending a client's leg into a knee and hip stretch by a window |
+
+Rejected during vetting: 20860610 and 20860603/20860607 (legible sportswear logo on shorts),
+20860597 and 20860587 (embroidered clinic logo legible on scrubs), 20860594 (sportswear logos on shoe
+and trousers), 20860608 (brand text on exercise mat), 14438788 (badge logo on stethoscope),
+6129500 ("First aid station" sign), 8459997 (legible name badge), 4270364/4270375 (dental-clinic context).
+
+Earlier v1 photographs (empty rooms, 7789616, 19921278, 11075080, 263201, 7691101, 6740823, 8250906,
+34896778, 6207362) were removed in this rebuild.
 
 ## Fonts
 
-Self-hosted latin subsets from Google Fonts, SIL Open Font License 1.1:
-- **Arvo** (400, 400 italic, 700) — fonts/arvo-*.woff2
-- **Kanit** (300, 400, 500, 600) — fonts/kanit-*.woff2
+**Poppins** 400, 500, 600, 700 — latin subset from Google Fonts, SIL Open Font License 1.1, self-hosted
+in `fonts/`. 400–600 copied from template 02; 700 downloaded from Google Fonts at build time.

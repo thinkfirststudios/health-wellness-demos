@@ -1,95 +1,94 @@
-/* Kilnwood Aesthetics Clinic — fictional demo template (ThinkFirst Studios).
-   Vanilla JS. No analytics, no tracking, no third-party requests, no count-up on any figure.
-   Every component renders in its final, readable state without this file. */
+/* Kilnwood Aesthetics Clinic — fictional demo. Vanilla JS, no external requests.
+   Everything on the page is visible without this file; it only adds the menu toggle,
+   the testimonial slider controls and front-end form messages. */
 (function () {
-  'use strict';
-  var root = document.documentElement;
-  root.classList.add('js-ready');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  "use strict";
+  var doc = document.documentElement;
+  doc.classList.add("js");
 
-  /* (c) year, scripted (B15) */
-  var y = String(new Date().getFullYear());
-  document.querySelectorAll('[data-year]').forEach(function (el) { el.textContent = y; });
-
-  /* hero photograph: 1.04 -> 1.00 once on load */
-  window.addEventListener('load', function () { root.classList.add('is-loaded'); });
-
-  /* condensing header: 88px -> 62px past 150px of scroll */
-  var header = document.querySelector('.site-header');
-  function onScroll() {
-    if (header) header.classList.toggle('is-condensed', window.scrollY > 150);
-  }
-  window.addEventListener('scroll', onScroll, { passive: true });
-  onScroll();
-
-  /* reveals (12px rise + fade, 80ms stagger) and the downtime-scale wipe, once each */
-  var reveals = Array.prototype.slice.call(document.querySelectorAll('.rv'));
-  var scales = Array.prototype.slice.call(document.querySelectorAll('.dts'));
-  document.querySelectorAll('[data-stagger]').forEach(function (group) {
-    Array.prototype.forEach.call(group.querySelectorAll(':scope > .rv'), function (el, i) {
-      el.style.setProperty('--d', (i * 80) + 'ms');
+  /* ---- Mobile navigation ---- */
+  var toggle = document.querySelector(".nav-toggle");
+  var nav = document.getElementById("site-nav");
+  if (toggle && nav) {
+    var setOpen = function (open) {
+      toggle.setAttribute("aria-expanded", open ? "true" : "false");
+      nav.classList.toggle("open", open);
+    };
+    toggle.addEventListener("click", function () {
+      setOpen(toggle.getAttribute("aria-expanded") !== "true");
     });
-  });
-  function showAll() {
-    reveals.forEach(function (el) { el.classList.add('is-in'); });
-    scales.forEach(function (el) { el.classList.add('is-in'); });
-  }
-  if (reduce || !('IntersectionObserver' in window)) {
-    showAll();
-  } else {
-    var io = new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) {
-        if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
-      });
-    }, { threshold: 0.15 });
-    reveals.concat(scales).forEach(function (el) { io.observe(el); });
-    window.addEventListener('beforeprint', showAll);
-  }
-
-  /* mobile menu overlay */
-  var menuBtn = document.querySelector('.menu-btn');
-  var overlay = document.getElementById('site-menu');
-  var closeBtn = overlay ? overlay.querySelector('.close') : null;
-  function setMenu(open) {
-    if (!overlay || !menuBtn) return;
-    overlay.classList.toggle('is-open', open);
-    document.body.classList.toggle('menu-open', open);
-    menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
-    if (open) { (closeBtn || overlay).focus(); } else { menuBtn.focus(); }
-  }
-  if (menuBtn) menuBtn.addEventListener('click', function () { setMenu(true); });
-  if (closeBtn) closeBtn.addEventListener('click', function () { setMenu(false); });
-  document.addEventListener('keydown', function (e) {
-    if ((e.keyCode === 27) && overlay && overlay.classList.contains('is-open')) setMenu(false);
-  });
-
-  /* sticky mobile bar: slides up once the hero (or page head) leaves the viewport */
-  var bar = document.querySelector('.sticky-bar');
-  var lead = document.querySelector('.hero, .page-head');
-  if (bar && lead && 'IntersectionObserver' in window) {
-    new IntersectionObserver(function (entries) {
-      entries.forEach(function (e) { bar.classList.toggle('is-up', !e.isIntersecting); });
-    }).observe(lead);
-  } else if (bar) {
-    bar.classList.add('is-up');
-  }
-
-  /* consultation grid: echo the chosen slot into the summary panel */
-  var out = document.getElementById('slot-summary');
-  if (out) {
-    document.querySelectorAll('input[name="slot"]').forEach(function (r) {
-      r.addEventListener('change', function () {
-        if (r.checked) out.textContent = r.getAttribute('data-summary');
-      });
+    document.addEventListener("keydown", function (e) {
+      if (e.key === "Escape" && toggle.getAttribute("aria-expanded") === "true") {
+        setOpen(false);
+        toggle.focus();
+      }
     });
+    window.matchMedia("(min-width: 1100px)").addEventListener("change", function () { setOpen(false); });
   }
 
-  /* demo forms: nothing is sent anywhere */
-  document.querySelectorAll('form[data-demo]').forEach(function (f) {
-    f.addEventListener('submit', function (e) {
+  /* ---- Testimonial slider ---- */
+  var slider = document.querySelector("[data-slider]");
+  if (slider) {
+    var slides = Array.prototype.slice.call(slider.querySelectorAll(".slide"));
+    var ctrl = slider.querySelector(".slider-ctrl");
+    var dotsWrap = slider.querySelector(".dots");
+    var pauseBtn = slider.querySelector(".pause");
+    var live = slider.querySelector(".slides");
+    var reduce = window.matchMedia("(prefers-reduced-motion: reduce)");
+    var index = 0, timer = null, paused = reduce.matches, hovering = false;
+    var dots = slides.map(function (s, i) {
+      var b = document.createElement("button");
+      b.type = "button";
+      b.setAttribute("aria-label", "Show review " + (i + 1) + " of " + slides.length);
+      b.addEventListener("click", function () { show(i, true); });
+      dotsWrap.appendChild(b);
+      return b;
+    });
+    function show(i, fromUser) {
+      index = (i + slides.length) % slides.length;
+      slides.forEach(function (s, n) { s.hidden = n !== index; });
+      dots.forEach(function (d, n) { d.setAttribute("aria-current", n === index ? "true" : "false"); });
+      live.setAttribute("aria-live", fromUser ? "polite" : "off");
+    }
+    function tick() { if (!paused && !hovering) show(index + 1, false); }
+    function start() { stop(); if (!paused) timer = window.setInterval(tick, 7000); }
+    function stop() { if (timer) { window.clearInterval(timer); timer = null; } }
+    function setPaused(p) {
+      paused = p;
+      pauseBtn.textContent = p ? "Play" : "Pause";
+      pauseBtn.setAttribute("aria-label", p ? "Start rotating reviews" : "Stop rotating reviews");
+      start();
+    }
+    slider.querySelector(".prev").addEventListener("click", function () { show(index - 1, true); });
+    slider.querySelector(".next").addEventListener("click", function () { show(index + 1, true); });
+    pauseBtn.addEventListener("click", function () { setPaused(!paused); });
+    slider.addEventListener("keydown", function (e) {
+      if (e.key === "ArrowLeft") { show(index - 1, true); e.preventDefault(); }
+      if (e.key === "ArrowRight") { show(index + 1, true); e.preventDefault(); }
+    });
+    slider.addEventListener("mouseenter", function () { hovering = true; });
+    slider.addEventListener("mouseleave", function () { hovering = false; });
+    slider.addEventListener("focusin", function () { hovering = true; });
+    slider.addEventListener("focusout", function () { hovering = false; });
+    reduce.addEventListener("change", function () { if (reduce.matches) setPaused(true); });
+    ctrl.classList.remove("no-js-hide");
+    show(0, false);
+    setPaused(paused);
+  }
+
+  /* ---- Front-end-only forms ---- */
+  Array.prototype.forEach.call(document.querySelectorAll("form[data-demo-form]"), function (form) {
+    var status = form.querySelector(".form-status");
+    form.addEventListener("submit", function (e) {
       e.preventDefault();
-      var s = f.querySelector('.form-status');
-      if (s) s.textContent = 'Demo only: nothing was sent. The booking route and intake platform are still to be confirmed.';
+      if (!form.checkValidity()) { form.reportValidity(); return; }
+      status.textContent = "Thank you. This is a demo site, so nothing was sent — on the live site the clinic would reply within one working day.";
+      form.reset();
     });
+  });
+
+  /* ---- Footer year ---- */
+  Array.prototype.forEach.call(document.querySelectorAll("[data-year]"), function (el) {
+    el.textContent = new Date().getFullYear();
   });
 })();

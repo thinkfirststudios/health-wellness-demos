@@ -1,38 +1,44 @@
-# Image credits — 03-mental-health-practice (Haverlock Therapy Group, fictional demo)
+# Image and font credits: 03-mental-health-practice (Haverlock Therapy Group, fictional demo)
 
-All photographs are from Pexels, under the Pexels licence (free for commercial use, no attribution
-required). Credits are recorded here for provenance. Photographer names were not retrieved: Pexels
-photo pages return 403 to scripted requests, and the build did not work around that check. Look them
-up on the linked pages before launch if attribution is wanted.
+Rebuilt 2026-11-04 to the dark/teal "Haumind" reference (mental-health-practice-ref-02.jpg). The reference's
+own images were not reused.
 
-Every frame was checked by eye: no people, no hands, no children, no legible text or screens, no
-stock-serenity subjects. Files are stored locally in `img/` and cropped to the slot ratio. ⛔ No
-stock image survives launch — the practice supplies photographs of its own rooms (PROMPT.md L17).
+All photographs are real photographs from Pexels, used under the Pexels licence (free for commercial use, no
+attribution required). They show models, not real clients or staff, and every therapist name in the template is
+invented. IDs were found by web search; each candidate was vetted by eye on a contact sheet for watermarks,
+legible brand marks, children, distress or self-harm imagery and AI artefacts. Photographer names are given only
+where a search listing showed them. Pexels pages return 403 to scripted requests, so check them on the linked
+page before launch.
 
-| Slot | Ratio | Files | Pexels ID / URL | What is in frame |
-|---|---|---|---|---|
-| HERO | 4:5 | `room-two-chairs-640/1200.webp` | 16625884 · https://www.pexels.com/photo/16625884/ | Two grey upholstered chairs and a small round black table against a pale brick wall, dark floor, nobody present |
-| ROOM 01 | 3:2 | `room-armchair-800/1600.webp` | 5490306 · https://www.pexels.com/photo/5490306/ | A wooden armchair with a grey cushion and a mustard pillow in the corner of a plain white room, grey carpet. Closest available: no lamp or rug in frame; cropped from a portrait original |
-| ROOM 02 | 3:2 | `waiting-sofa-800/1600.webp` | 7195873 · https://www.pexels.com/photo/7195873/ | An empty grey corner sofa and a low black-framed table in a plain white room, wooden floor, cool even light. Closest available: a bare lounge rather than a waiting room; no water cooler or clock |
-| DETAIL 01 | 1:1 | `detail-tissues-480/960.webp` | 2292081 · https://www.pexels.com/photo/2292081/ | A white cylindrical tissue box on a glass table, window frame softly behind |
-| DETAIL 02 | 1:1 | `detail-lamp-480/960.webp` | 6825324 · https://www.pexels.com/photo/6825324/ | A round white table lamp on a pale stone side table against a plain warm-pale wall |
-| DETAIL 03 | 1:1 | `detail-hook-480/960.webp` | 1256916 · https://www.pexels.com/photo/1256916/ | A single steel coat hook on a plain grey wall, black and white |
-| DETAIL 04 | 1:1 | `detail-plant-480/960.webp` | 7193660 · https://www.pexels.com/photo/7193660/ | A small palm in a terracotta pot on a white surface against a white wall |
-| DETAIL 05 | 1:1 | `detail-notepad-480/960.webp` | 4195410 · https://www.pexels.com/photo/4195410/ | A blank lined spiral notepad and a silver pen on a light wooden desk. Not face-down, but blank: nothing legible |
-| BUILDING | 16:9 | `building-entrance-800/1600.webp` | 1790584 · https://www.pexels.com/photo/1790584/ | A plain white and grey townhouse frontage with black doors, stone steps with an iron rail, a barred window and a brick pavement, overcast daylight. A small house number above the upper door is the only marking |
-| CORRIDOR | 2:3 | `corridor-600/1000.webp` | 20075995 · https://www.pexels.com/photo/20075995/ | A plain white corridor with a tiled floor, open doorways and doors along both sides. No legible door number |
-| MAP (contact.html) | 16:9 | reuses BUILDING | 1790584 | Labelled static slot standing in for `[MAP — CONFIRM WHETHER A THIRD-PARTY EMBED IS ACCEPTABLE]`. No map embed |
-| TEAM 01–06 | 4:5 | none | — | Labelled empty frames by design. No photograph |
+These IDs are unique to this template: none of them is used in templates 01 or 02.
 
-Replaced on 2026-11-03 to avoid sharing photographs with templates 01 and 02: BUILDING was 34896778, ROOM 02 was 18641848.
-Also rejected in that swap: 33903294 (green-tinted glass, legible "B920" plate), 33812023 (legible "CONSULTATION ROOM" signs, floor stain).
+| Files (`img/`) | Used for | Pexels ID / URL | What is in frame |
+|---|---|---|---|
+| `hero-1200/2000.webp` (3:2) | Home hero, desktop | 17867916 · https://www.pexels.com/photo/17867916/ (Anastasiia Chaikovska, per listing) | A woman with her eyes closed, face tilted up to the light, in a field at dusk with a soft sky and hills behind |
+| `hero-m-600/1000.webp` (3:4) | Home hero, mobile (art-directed `<picture>`) | 26903021 · https://www.pexels.com/photo/26903021/ (Alexander Mass, per listing) | A woman with her eyes closed and her head tilted back, against a pale dusk sky over the sea |
+| `about-headphones-700/1200.webp` (1:1, cropped locally) | Home "About us" split, about.html page head | 9930759 · https://www.pexels.com/photo/9930759/ | A woman in headphones and glasses sitting by a high window, looking out over a blurred city. The headphone shield has no legible text |
+| `svc-individual-500/900.webp` (4:5) | Individual therapy card and row | 9902415 · https://www.pexels.com/photo/9902415/ (Ron Lach, per listing) | Profile of a man with his eyes closed beside a window, in warm light |
+| `svc-couples-500/900.webp` (4:5) | Couples therapy card and row | 63707 · https://www.pexels.com/photo/63707/ | A couple in silhouette by a railing at sunset over the water |
+| `svc-group-500/900.webp` (4:5) | Group therapy card and row, about.html "Our rooms" | 5710976 · https://www.pexels.com/photo/5710976/ (Tima Miroshnichenko, per listing) | A circle of adults seated on chairs in a large room, with light falling from high windows |
+| `about-man-700/1200.webp` (4:5) | Online therapy card and row, first-appointment split | 8955463 · https://www.pexels.com/photo/8955463/ (Ivan S, per listing) | Close-up of a man with his eyes closed, calm expression |
+| `cta-sunlight-700/1200.webp` (4:5) | services.html CTA band, first-appointment page head | 1546495 · https://www.pexels.com/photo/1546495/ | Close-up of a woman with her eyes closed and a slight smile in warm sunlight |
+| `team-maren-400/800.webp` (4:5) | Therapist "Maren Ashcombe" (fictional) | 36593089 · https://www.pexels.com/photo/36593089/ | A smiling woman with long dark hair in a black turtleneck, dark studio backdrop |
+| `team-imani-400/800.webp` (4:5) | Therapist "Imani Bellweather" (fictional) | 16152597 · https://www.pexels.com/photo/16152597/ (Korede Adenola, per listing) | A smiling woman with short natural hair in a black top, dark backdrop |
+| `team-rafael-400/800.webp` (4:5) | Therapist "Rafael Dunmore" (fictional) | 17368407 · https://www.pexels.com/photo/17368407/ (Ben Khatry, per listing) | A young man in a black sweater, chin on hand, dark backdrop |
+| `team-devan-400/800.webp` (4:5) | Therapist "Devan Sethuram" (fictional) | 18475277 · https://www.pexels.com/photo/18475277/ | A bearded man in glasses and a white shirt, dark backdrop |
+| `team-owen-400/800.webp` (4:5, cropped locally from landscape) | Therapist "Owen Halloway" (fictional) | 7298874 · https://www.pexels.com/photo/7298874/ | A smiling bald man in glasses looking to one side, dark backdrop |
+| `team-ruth-400/800.webp` (4:5) | Therapist "Dr. Ruth Penhallow" (fictional) | 7225159 · https://www.pexels.com/photo/7225159/ | A smiling older woman with silver hair in a cream turtleneck, pale corridor behind |
 
-Rejected during vetting (for the record): 4846436 (legible text on framed posters), 19921278
-(shallow focus, teal far end), 6588580 (TV screen in frame), 105004 (olive-green armchair on a
-blue-cast carpet), 23471387 (mint-green wall), 30234378 (mug and printed notebook cover), 7790205
-(mug in frame), 1350789 (green patterned chairs), 8459996 (navy chairs).
+Rejected while vetting, for the record: 1181368 (laptop logo legible), 30559023 and 34302637 (lingerie or
+semi-dressed), 14142337 (heavy red gel light), 5105081 (surreal mirrored composite), 1454021 (too dark to read),
+5488076 (fashion pose), 9022240 (beach umbrellas, busy), 2421934 and 16803755 (busy backgrounds), and
+19971491 and 9711612 (documentary portraits that don't suit a therapist card).
+
+Removed in this rebuild (no longer used): every v1 interior photograph (16625884, 5490306, 7195873, 2292081,
+6825324, 1256916, 7193660, 4195410, 1790584, 20075995) and the Gelasio and Oxygen font files.
 
 ## Fonts
 
-`fonts/` — Gelasio (roman variable + italic) and Oxygen 300/400/700, latin subset, from Google Fonts,
-self-hosted. SIL Open Font Licence 1.1.
+`fonts/`: Playfair Display (variable 400–700, roman `playfair-var.woff2` and italic `playfair-italic-var.woff2`)
+and Inter (variable 300–600, `inter-var.woff2`). Both are latin subsets from Google Fonts, self-hosted, under the
+SIL Open Font Licence 1.1.

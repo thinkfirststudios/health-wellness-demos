@@ -1,310 +1,142 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Treatments · Kilnwood Aesthetics Clinic (demo)</title>
-<meta name="description" content="Fictional demo template. Every treatment, who performs it, how long it takes, its recovery and its price, all as visible placeholders.">
+<title>Treatments — Kilnwood Aesthetics Clinic</title>
+<meta name="description" content="Facials, chemical peels, microneedling, injectables, laser hair removal and body treatments at Kilnwood Aesthetics Clinic, with sample prices and what each involves.">
 <meta name="robots" content="noindex, nofollow">
-<meta property="og:type" content="website">
-<meta property="og:title" content="Treatments · Kilnwood Aesthetics Clinic (fictional demo)">
-<meta property="og:description" content="Fictional demo template. Every treatment, who performs it, how long it takes, its recovery and its price, all as visible placeholders.">
-<meta name="theme-color" content="#17141B">
+<meta name="theme-color" content="#1e1e1e">
+<link rel="preload" href="assets/fonts/abril-fatface-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/libre-baskerville-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
-<script>document.documentElement.classList.add('js');window.addEventListener('load',function(){if(!document.documentElement.classList.contains('js-ready')){document.documentElement.classList.remove('js');}});</script>
-<script src="script.js" defer></script>
+<script>document.documentElement.classList.add('js')</script>
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<p class="demo-marker" aria-label="Demo marker">DEMO — ThinkFirst Studios · [Your name here]</p>
 <header class="site-header">
-  <div class="util"><div class="wrap">
-    <a class="btn btn--outline" href="tel:+1-000-000-0000">Call <span class="ph">[PHONE]</span></a>
-    <a class="btn btn--primary" href="consultation.html">Book a consultation</a>
-  </div></div>
-  <div class="mainbar"><div class="wrap">
-    <a class="wordmark wordmark--mobile" href="index.html">Kilnwood Aesthetics Clinic<small>aesthetic and skin treatments</small></a>
-    <div class="mb-actions">
-      <a class="btn btn--primary" href="consultation.html">Book a consultation</a>
-      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
-    </div>
-    <nav class="nav-split" aria-label="Primary">
-      <ul class="nav-left"><li><a href="treatments.html" aria-current="page">Treatments</a></li><li><a href="downtime.html">Recovery</a></li><li><a href="pricing.html">Pricing</a></li></ul>
-      <a class="wordmark" href="index.html">Kilnwood Aesthetics Clinic<small>aesthetic and skin treatments</small></a>
-      <ul class="nav-right"><li><a href="consultation.html">Consultation</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li></ul>
+  <div class="hdr">
+    <span class="lang" title="This site is in English"><span aria-hidden="true">ENG</span><span class="sr-only">Language: English</span></span>
+    <a class="emblem" href="index.html" aria-label="Kilnwood Aesthetics Clinic, home"><svg viewBox="0 0 54 46" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M27 6c-6 6-8 13-8 20 0 6 3 11 8 14 5-3 8-8 8-14 0-7-2-14-8-20Z"/><path d="M19 22c-6-3-12-3-16-1 1 9 7 16 15 18 3 1 6 1 9 1"/><path d="M35 22c6-3 12-3 16-1-1 9-7 16-15 18-3 1-6 1-9 1"/><path d="M27 16v24"/><path d="M12 43h30"/></svg></a>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
+    <nav class="nav" id="site-nav" aria-label="Main">
+      <ul class="nav-l"><li><a href="about.html">About</a></li><li><a href="treatments.html" aria-current="page">Treatments</a></li><li><a href="downtime.html">Aftercare</a></li></ul>
+      <ul class="nav-r"><li><a href="pricing.html">Pricing</a></li><li><a href="consultation.html">Consultation</a></li><li><a href="contact.html">Contact</a></li></ul>
     </nav>
-  </div></div>
+  </div>
 </header>
-<div class="overlay" id="site-menu" role="dialog" aria-modal="true" aria-label="Site menu" tabindex="-1">
-  <button class="menu-btn close" type="button">Close</button>
-  <nav aria-label="Primary (mobile)">
-    <ul>
-      <li><a href="index.html">Home</a></li>
-      <li><a href="treatments.html" aria-current="page">Treatments</a></li><li><a href="downtime.html">Recovery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="consultation.html">Consultation</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-    </ul>
-  </nav>
-  <div class="btn-row">
-    <a class="btn btn--primary" href="consultation.html">Book a consultation</a>
-    <a class="btn btn--outline" href="tel:+1-000-000-0000">Call <span class="ph">[PHONE]</span></a>
-  </div>
-</div>
-
 <main id="main">
-<section class="page-head" aria-labelledby="h1">
+<section class="page-hero" aria-labelledby="h1">
+  <img src="assets/img/facial-cleanse-1000.webp" srcset="assets/img/facial-cleanse-600.webp 600w, assets/img/facial-cleanse-1000.webp 1000w" sizes="100vw" width="1000" height="667" alt="" fetchpriority="high" decoding="async" style="object-position:50% 35%">
   <div class="wrap">
-    <p class="eyebrow">Treatments</p>
-    <h1 id="h1">Treatments, who performs them, and what they cost</h1>
-    <p class="lede"><span class="ph">[PLACEHOLDER: 2–3 sentences — client to supply]</span></p>
-    <p class="plain-words"><span class="ph">[PRODUCTS AND DEVICES — CONFIRM, AND CONFIRM MANUFACTURER MARKETING PERMISSIONS]</span> Treatments are described by what they are, not by brand.</p>
-    <p><span class="ph">[WHO PERFORMS EACH TREATMENT, AND UNDER WHAT SUPERVISION — CONFIRM PER TREATMENT]</span></p>
+    <h1 id="h1">Treatments</h1>
+    <p class="script">Facials, skin, injectables, laser and body</p>
+    <p class="lede">Every treatment below starts with a consultation with a licensed practitioner, who will confirm whether it suits your skin and your health.</p>
   </div>
 </section>
-<aside class="licence" aria-label="Licensing">
-  <div class="wrap"><ul>
-    <li class="licence-label">Licensing</li>
-    <li><span class="ph">[PRACTITIONER LICENCES AND NUMBERS — CONFIRM, PER STATE]</span></li>
-    <li><span class="ph">[MEDICAL DIRECTOR — CONFIRM]</span></li>
-    <li><span class="ph">[DOES THIS STATE REQUIRE A LICENCE NUMBER IN ADVERTISING? — CONFIRM]</span></li>
-  </ul></div>
-</aside>
 
-<section class="section" id="injectables" aria-labelledby="c-injectables">
+<section class="section" aria-label="Treatment menu">
   <div class="wrap">
-    <div class="section-head rv"><p class="eyebrow"><span class="ph">[CATEGORY — CONFIRM]</span></p><h2 id="c-injectables">Injectables</h2>
-    <ul class="facts" style="max-width:900px">
-      <li><span class="q">What this category is</span><span class="ph">[WHAT THIS CATEGORY IS, GENERICALLY — CONFIRM]</span></li>
-      <li><span class="q">Minimum age</span><span class="ph">[MINIMUM AGE — CONFIRM]</span></li>
-      <li><span class="q">Parental consent</span><span class="ph">[IS PARENTAL CONSENT REQUIRED? — CONFIRM]</span></li>
-      <li><span class='q'>Who may inject in this state</span><span class="ph">[WHO MAY INJECT IN THIS STATE, AND UNDER WHAT DELEGATION OR SUPERVISION? — CONFIRM]</span></li>
-      
-      
-    </ul></div>
-    <div class="ruled"><table class="tt">
-<caption><strong>Injectables: treatments, who performs them, recovery and price</strong><span class="ph">[PRODUCTS AND DEVICES — CONFIRM, AND CONFIRM MANUFACTURER MARKETING PERMISSIONS]</span> <span class="ph">[RESULTS VARY — CONFIRM WORDING WITH THE MEDICAL DIRECTOR]</span></caption>
-<thead><tr><th scope="col">Treatment</th><th scope="col">Performed by</th><th scope="col">How long</th><th scope="col">Recovery</th><th scope="col">Price</th><th scope="col">Consultation required</th></tr></thead>
-<tbody><tr class="tt-cat"><th scope="rowgroup" colspan="6">Injectables · <span class="ph">[CATEGORY — CONFIRM]</span></th></tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT A1 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT A2 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT A3 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr></tbody>
-</table></div>
-  </div>
-</section><section class="section section--deep" id="energy-based" aria-labelledby="c-energy-based">
-  <div class="wrap">
-    <div class="section-head rv"><p class="eyebrow"><span class="ph">[CATEGORY — CONFIRM]</span></p><h2 id="c-energy-based">Energy-based and laser</h2>
-    <ul class="facts" style="max-width:900px">
-      <li><span class="q">What this category is</span><span class="ph">[WHAT THIS CATEGORY IS, GENERICALLY — CONFIRM]</span></li>
-      <li><span class="q">Minimum age</span><span class="ph">[MINIMUM AGE — CONFIRM]</span></li>
-      <li><span class="q">Parental consent</span><span class="ph">[IS PARENTAL CONSENT REQUIRED? — CONFIRM]</span></li>
-      
-      <li><span class='q'>Who may operate the device in this state</span><span class="ph">[WHO MAY OPERATE AN ENERGY-BASED DEVICE IN THIS STATE? — CONFIRM]</span></li>
-      
-    </ul></div>
-    <div class="ruled"><table class="tt">
-<caption><strong>Energy-based and laser: treatments, who performs them, recovery and price</strong><span class="ph">[PRODUCTS AND DEVICES — CONFIRM, AND CONFIRM MANUFACTURER MARKETING PERMISSIONS]</span> <span class="ph">[RESULTS VARY — CONFIRM WORDING WITH THE MEDICAL DIRECTOR]</span></caption>
-<thead><tr><th scope="col">Treatment</th><th scope="col">Performed by</th><th scope="col">How long</th><th scope="col">Recovery</th><th scope="col">Price</th><th scope="col">Consultation required</th></tr></thead>
-<tbody><tr class="tt-cat"><th scope="rowgroup" colspan="6">Energy-based and laser · <span class="ph">[CATEGORY — CONFIRM]</span></th></tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT B1 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT B2 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT B3 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr></tbody>
-</table></div>
-  </div>
-</section><section class="section" id="skin" aria-labelledby="c-skin">
-  <div class="wrap">
-    <div class="section-head rv"><p class="eyebrow"><span class="ph">[CATEGORY — CONFIRM]</span></p><h2 id="c-skin">Skin</h2>
-    <ul class="facts" style="max-width:900px">
-      <li><span class="q">What this category is</span><span class="ph">[WHAT THIS CATEGORY IS, GENERICALLY — CONFIRM]</span></li>
-      <li><span class="q">Minimum age</span><span class="ph">[MINIMUM AGE — CONFIRM]</span></li>
-      <li><span class="q">Parental consent</span><span class="ph">[IS PARENTAL CONSENT REQUIRED? — CONFIRM]</span></li>
-      
-      
-      
-    </ul></div>
-    <div class="ruled"><table class="tt">
-<caption><strong>Skin: treatments, who performs them, recovery and price</strong><span class="ph">[PRODUCTS AND DEVICES — CONFIRM, AND CONFIRM MANUFACTURER MARKETING PERMISSIONS]</span> <span class="ph">[RESULTS VARY — CONFIRM WORDING WITH THE MEDICAL DIRECTOR]</span></caption>
-<thead><tr><th scope="col">Treatment</th><th scope="col">Performed by</th><th scope="col">How long</th><th scope="col">Recovery</th><th scope="col">Price</th><th scope="col">Consultation required</th></tr></thead>
-<tbody><tr class="tt-cat"><th scope="rowgroup" colspan="6">Skin · <span class="ph">[CATEGORY — CONFIRM]</span></th></tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT C1 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT C2 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT C3 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr></tbody>
-</table></div>
-  </div>
-</section><section class="section section--deep" id="body" aria-labelledby="c-body">
-  <div class="wrap">
-    <div class="section-head rv"><p class="eyebrow"><span class="ph">[CATEGORY — CONFIRM]</span></p><h2 id="c-body">Body</h2>
-    <ul class="facts" style="max-width:900px">
-      <li><span class="q">What this category is</span><span class="ph">[WHAT THIS CATEGORY IS, GENERICALLY — CONFIRM]</span></li>
-      <li><span class="q">Minimum age</span><span class="ph">[MINIMUM AGE — CONFIRM]</span></li>
-      <li><span class="q">Parental consent</span><span class="ph">[IS PARENTAL CONSENT REQUIRED? — CONFIRM]</span></li>
-      
-      
-      <li><span class='q'>Nutrition or weight services</span><span class="ph">[NUTRITION SERVICES — CONFIRM SCOPE, CREDENTIALS AND STATE]</span></li>
-    </ul></div>
-    <div class="ruled"><table class="tt">
-<caption><strong>Body: treatments, who performs them, recovery and price</strong><span class="ph">[PRODUCTS AND DEVICES — CONFIRM, AND CONFIRM MANUFACTURER MARKETING PERMISSIONS]</span> <span class="ph">[RESULTS VARY — CONFIRM WORDING WITH THE MEDICAL DIRECTOR]</span></caption>
-<thead><tr><th scope="col">Treatment</th><th scope="col">Performed by</th><th scope="col">How long</th><th scope="col">Recovery</th><th scope="col">Price</th><th scope="col">Consultation required</th></tr></thead>
-<tbody><tr class="tt-cat"><th scope="rowgroup" colspan="6">Body · <span class="ph">[CATEGORY — CONFIRM]</span></th></tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT D1 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr><tr>
-  <th scope="row"><span class="lbl">Treatment</span><span class="t-name"><span class="ph">[TREATMENT D2 — CONFIRM]</span></span><span class="t-what"><span class="ph">[WHAT IT IS, GENERICALLY — CONFIRM]</span></span></th>
-  <td><span class="lbl">Performed by</span><span class="ph">[WHO PERFORMS THIS, AND UNDER WHAT SUPERVISION — CONFIRM]</span></td>
-  <td><span class="lbl">How long</span><span class="ph">[APPOINTMENT LENGTH — CONFIRM]</span></td>
-  <td><span class="lbl">Recovery</span><div class="rec"><div class="dts dts--compact" role="img" aria-label="Recovery: step [n] of 5 — [STEP LABEL — CONFIRM]"><ol class="dts__track" aria-hidden="true"><li class="on"></li><li class="on"></li><li class="on"></li><li></li><li></li></ol></div><span>Back to work after <span class="ph">[BACK TO WORK AFTER — CONFIRM]</span></span></div></td>
-  <td><span class="lbl">Price</span><span class="ph ph--price">[TREATMENT PRICE — CONFIRM]</span></td>
-  <td><span class="lbl">Consultation required</span><span class="ph">[CONSULTATION REQUIRED? — CONFIRM]</span></td>
-</tr></tbody>
-</table></div>
+    <p class="center"><span class="tag">Sample prices — demo only</span></p>
+    <section class="tx" id="facials" aria-labelledby="facials-h">
+      <div class="tx-media wide"><img src="assets/img/serum-peel-1000.webp" srcset="assets/img/serum-peel-600.webp 600w, assets/img/serum-peel-1000.webp 1000w" sizes="(min-width:900px) 400px, 90vw" width="1000" height="667" alt="A practitioner's fingers smoothing serum across a client's cheek as a dropper releases a drop" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="tx-head"><svg class="svc-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M10 17c0-7 4.5-11 10-11s10 4 10 11v4c0 7-4.5 12-10 12s-10-5-10-12Z"/><path d="M9.5 15c3-2 6.5-3 10.5-3s7.5 1 10.5 3"/><path d="M15 21c1 .8 2.2.8 3 0M22 21c1 .8 2.2.8 3 0"/><path d="M17.5 27.5c1.6 1 3.4 1 5 0"/><circle cx="14" cy="25" r=".6"/><circle cx="26" cy="25" r=".6"/></svg><h2 id="facials-h">Facials &amp; chemical peels</h2></div>
+        <p>Our facials are clinical rather than purely relaxing, though most people still find them restful. Each one opens with a skin assessment so the products and techniques suit what your skin needs on the day.</p><p>Chemical peels are chosen by depth and by skin type. Light peels can fit into a lunch break; medium-depth peels need more preparation and more aftercare, and are only booked after a consultation.</p>
+        <ul class="menu"><li><span class="mn">Signature clinical facial</span><span class="mp">$140 · 60 min</span><span class="md">Double cleanse, skin analysis, exfoliation, extractions where needed, mask and protection.</span></li><li><span class="mn">Express facial</span><span class="mp">$85 · 30 min</span><span class="md">A shorter cleanse, exfoliation and mask for skin that is already on a routine.</span></li><li><span class="mn">Light chemical peel</span><span class="mp">from $165 · 45 min</span><span class="md">Surface-level acids for dullness and uneven tone. Mild flaking for a few days is common.</span></li><li><span class="mn">Medium-depth peel</span><span class="mp">from $295 · 60 min</span><span class="md">A stronger peel for pigmentation or texture, with a pre-treatment skin plan and a follow-up check.</span></li></ul>
+        <a class="btn" href="consultation.html">Book a consultation</a>
+      </div>
+    </section>
+    <section class="tx rev" id="skin" aria-labelledby="skin-h">
+      <div class="tx-media"><img src="assets/img/skin-device-800.webp" srcset="assets/img/skin-device-480.webp 480w, assets/img/skin-device-800.webp 800w" sizes="(min-width:900px) 400px, 90vw" width="800" height="1000" alt="A client lying back with eyes closed while a practitioner uses a handheld skin device on her forehead" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="tx-head"><svg class="svc-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 5h10M17 5v6M23 5v6"/><path d="M14 11h12l-1 5H15Z"/><path d="M15 16c-4 3-6 7-6 11a11 11 0 0 0 22 0c0-4-2-8-6-11"/><path d="M15 26c1.5 2 3 3 5 3"/></svg><h2 id="skin-h">Microneedling &amp; skin treatments</h2></div>
+        <p>Microneedling uses a sterile, single-use cartridge of fine needles to create controlled channels in the skin. It is usually booked as a course of three to six sessions about four weeks apart.</p><p>We do not microneedle active acne, broken skin or recently tanned skin. Your practitioner will check this at the consultation and may suggest a peel or a facial first.</p>
+        <ul class="menu"><li><span class="mn">Microneedling, full face</span><span class="mp">$325 · 75 min</span><span class="md">Includes topical numbing, treatment and a calming mask. Redness typically settles over one to three days.</span></li><li><span class="mn">Microneedling, face and neck</span><span class="mp">$395 · 90 min</span><span class="md">As above, extended to the neck.</span></li><li><span class="mn">LED light add-on</span><span class="mp">$45 · 20 min</span><span class="md">Red or blue LED after a facial or peel.</span></li><li><span class="mn">Dermaplaning</span><span class="mp">$95 · 40 min</span><span class="md">Gentle removal of fine surface hair and dead skin with a sterile blade.</span></li></ul>
+        <a class="btn" href="consultation.html">Book a consultation</a>
+      </div>
+    </section>
+    <section class="tx" id="injectables" aria-labelledby="injectables-h">
+      <div class="tx-media"><img src="assets/img/practitioner-mask-800.webp" srcset="assets/img/practitioner-mask-480.webp 480w, assets/img/practitioner-mask-800.webp 800w" sizes="(min-width:900px) 400px, 90vw" width="800" height="1000" alt="A practitioner in gloves applying a treatment mask to a client's face" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="tx-head"><svg class="svc-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M20 5c-5 7-9 12-9 18a9 9 0 0 0 18 0c0-6-4-11-9-18Z"/><path d="M15.5 24a4.5 4.5 0 0 0 4.5 4.5"/><path d="M31 7v6M28 10h6"/></svg><h2 id="injectables-h">Injectables</h2></div>
+        <p>Wrinkle-relaxing injections and dermal filler are prescription-only medical treatments. At Kilnwood they are planned and carried out by a registered nurse injector or physician, after a medical consultation and a review of your history.</p><p>We take a conservative approach. If a treatment is unlikely to give you what you are hoping for, we will say so. A review appointment is booked two weeks after wrinkle-relaxing injections so any adjustment is planned.</p>
+        <ul class="menu"><li><span class="mn">Medical consultation</span><span class="mp">$50, credited</span><span class="md">Credited against treatment if you go ahead within 30 days.</span></li><li><span class="mn">Wrinkle-relaxing injections</span><span class="mp">from $280 per area</span><span class="md">Commonly the forehead, frown lines or crow's feet. Price confirmed at consultation.</span></li><li><span class="mn">Dermal filler</span><span class="mp">from $650 per syringe</span><span class="md">Used to restore volume or soften folds. Amount and placement agreed in advance.</span></li><li><span class="mn">Review appointment</span><span class="mp">Included</span><span class="md">A two-week check after wrinkle-relaxing injections.</span></li></ul>
+        <a class="btn" href="consultation.html">Book a consultation</a>
+      </div>
+    </section>
+    <section class="tx rev" id="energy-based" aria-labelledby="energy-based-h">
+      <div class="tx-media"><img src="assets/img/laser-hair-800.webp" srcset="assets/img/laser-hair-480.webp 480w, assets/img/laser-hair-800.webp 800w" sizes="(min-width:900px) 400px, 90vw" width="800" height="1000" alt="A handheld laser applicator held against a client's leg on a treatment bed" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="tx-head"><svg class="svc-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="20" cy="20" r="5"/><path d="M20 5v5M20 30v5M5 20h5M30 20h5M9.4 9.4l3.5 3.5M27.1 27.1l3.5 3.5M9.4 30.6l3.5-3.5M27.1 12.9l3.5-3.5"/></svg><h2 id="energy-based-h">Laser hair removal</h2></div>
+        <p>Laser hair removal works on hair in its growth phase, so it is planned as a course of sessions four to eight weeks apart. Most people need six or more; the number varies with hair colour, skin type and area.</p><p>Every new client has a patch test at least 48 hours before their first session. You will be asked to avoid sun exposure and to shave, not wax, between sessions.</p>
+        <ul class="menu"><li><span class="mn">Patch test</span><span class="mp">Free · 15 min</span><span class="md">Required before any laser treatment.</span></li><li><span class="mn">Small area</span><span class="mp">$95 per session</span><span class="md">Upper lip, chin or underarms.</span></li><li><span class="mn">Medium area</span><span class="mp">$165 per session</span><span class="md">Bikini line, lower arms or lower back.</span></li><li><span class="mn">Large area</span><span class="mp">$260 per session</span><span class="md">Full legs or full back.</span></li></ul>
+        <a class="btn" href="consultation.html">Book a consultation</a>
+      </div>
+    </section>
+    <section class="tx" id="body" aria-labelledby="body-h">
+      <div class="tx-media"><img src="assets/img/body-treatment-800.webp" srcset="assets/img/body-treatment-480.webp 480w, assets/img/body-treatment-800.webp 800w" sizes="(min-width:900px) 400px, 90vw" width="800" height="1000" alt="A practitioner's hands working across a client's upper back during a body treatment" loading="lazy" decoding="async"></div>
+      <div>
+        <div class="tx-head"><svg class="svc-icon" viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><circle cx="20" cy="8" r="3.2"/><path d="M13 15c4 1.5 10 1.5 14 0"/><path d="M15.5 15.5c-.5 5 .5 8 2 10l-2 10M24.5 15.5c.5 5-.5 8-2 10l2 10"/><path d="M17.5 25.5h5"/></svg><h2 id="body-h">Body treatments</h2></div>
+        <p>Body treatments at Kilnwood are non-surgical sessions for areas such as the abdomen, thighs and upper arms. They are not a weight-loss treatment, and results differ between people; your practitioner will measure and photograph the area at the start, with your consent, so you can both review progress honestly.</p><p>We also offer back facials and smoothing treatments for areas that are hard to care for at home.</p>
+        <ul class="menu"><li><span class="mn">Body contouring session</span><span class="mp">from $220 · 45 min</span><span class="md">Energy-based treatment planned as a course after consultation.</span></li><li><span class="mn">Back facial</span><span class="mp">$120 · 50 min</span><span class="md">Cleanse, exfoliation, extractions and mask for the back and shoulders.</span></li><li><span class="mn">Body smoothing treatment</span><span class="mp">$150 · 60 min</span><span class="md">Exfoliation and hydration for the upper arms, thighs or other areas.</span></li></ul>
+        <a class="btn" href="consultation.html">Book a consultation</a>
+      </div>
+    </section>
   </div>
 </section>
-<section class="section" aria-labelledby="eq-h">
+
+<section class="section section-alt" aria-labelledby="how-h">
   <div class="wrap">
-    <div class="section-head rv"><h2 id="eq-h">In the treatment rooms</h2><p><span class="ph">[PLACEHOLDER: 2–3 sentences — client to supply]</span></p></div>
-    <ul class="strip" data-stagger style="grid-template-columns:repeat(auto-fit,minmax(200px,1fr))">
-      <li><figure class="photo r-1x1" style="margin:0"><img src="assets/img/detail-counter-400.webp" srcset="assets/img/detail-counter-400.webp 400w, assets/img/detail-counter-800.webp 800w" sizes="(min-width: 1280px) 20vw, (min-width: 768px) 33vw, 50vw" width="800" height="800" alt="A white counter with an integrated basin, a chrome tap and an upturned glass cover." loading="lazy" decoding="async"></figure><p class="note" style="margin:8px 0 0">A clean counter.</p></li>
-      <li><figure class="photo r-1x1" style="margin:0"><img src="assets/img/detail-tray-400.webp" srcset="assets/img/detail-tray-400.webp 400w, assets/img/detail-tray-800.webp 800w" sizes="(min-width: 1280px) 20vw, (min-width: 768px) 33vw, 50vw" width="800" height="800" alt="Three steel tweezers on a round tray, photographed in black and white." loading="lazy" decoding="async"></figure><p class="note" style="margin:8px 0 0">Instruments on a tray.</p></li>
-      <li><figure class="photo r-1x1" style="margin:0"><img src="assets/img/detail-linen-400.webp" srcset="assets/img/detail-linen-400.webp 400w, assets/img/detail-linen-800.webp 800w" sizes="(min-width: 1280px) 20vw, (min-width: 768px) 33vw, 50vw" width="800" height="800" alt="Two folded white towels with grey stripes." loading="lazy" decoding="async"></figure><p class="note" style="margin:8px 0 0">Linen.</p></li>
-    </ul>
-  </div>
-</section>
-<section class="band" aria-labelledby="band-h">
-  <div class="wrap">
-    <div><h2 id="band-h">Book a consultation</h2><p>Or call <a href="tel:+1-000-000-0000"><span class="ph">[PHONE]</span></a>. <a class="more" href="downtime.html">What recovery actually looks like</a></p></div>
-    <div><div class="intake">
-  <p><span class="ph">[HIPAA-COMPLIANT INTAKE — CONFIRM PLATFORM AND BAA]</span></p>
-  <p>This form asks for nothing about your health — no concerns, no photographs, no history. <span class="ph">[DO NOT SEND HEALTH DETAILS THROUGH THIS FORM — CONFIRM WORDING]</span></p>
-</div>
-<form class="form" data-demo action="#" method="post" aria-label="Consultation request">
-  <div class="field"><label for="tr-name">Your name</label><input id="tr-name" name="name" type="text" autocomplete="name" required></div>
-  <div class="field"><label for="tr-method">Preferred contact method</label>
-    <select id="tr-method" name="method" required><option value="">Choose one</option><option>Phone call</option><option>Text message</option><option>Email</option></select></div>
-  <div class="field"><label for="tr-reach">Phone number or email address, for that method</label><input id="tr-reach" name="reach" type="text" autocomplete="email" required></div>
-  <div class="field"><label for="tr-cat"><span class="ph">[TREATMENT CATEGORY OF INTEREST]</span></label>
-    <select id="tr-cat" name="category"><option value="">Not sure yet</option><option>Injectables [CATEGORY — CONFIRM]</option><option>Energy-based and laser [CATEGORY — CONFIRM]</option><option>Skin [CATEGORY — CONFIRM]</option><option>Body [CATEGORY — CONFIRM]</option></select>
-    <span class="hint">Categories only, from the published list. Nothing narrower is asked.</span></div>
-  <button class="btn btn--primary" type="submit">Book a consultation</button>
-  <p class="form-status" role="status"></p>
-</form></div>
+    <div class="title-lines"><h2 id="how-h">How a treatment is planned</h2><p class="sub">Consultation first, treatment second</p></div>
+    <div class="cards">
+      <div class="card"><span class="num">01</span><h3>Consultation</h3><p>A licensed practitioner reviews your skin and history in person and talks through options, costs and recovery.</p></div>
+      <div class="card line"><span class="num">02</span><h3>A written plan</h3><p>You leave with the treatments discussed, the number of sessions, the price and the aftercare, in writing.</p></div>
+      <div class="card"><span class="num">03</span><h3>Treatment and review</h3><p>Treatment is booked when you are ready, with a follow-up so questions are answered by the same team.</p></div>
+    </div>
+    <p class="center" style="margin-top:34px"><a class="btn btn-line" href="downtime.html">Read about recovery &amp; aftercare</a></p>
   </div>
 </section>
 </main>
 <footer class="site-footer">
   <div class="wrap">
-    <div class="foot-cols">
-      <div>
-        <h2>Kilnwood Aesthetics Clinic</h2>
-        <address>
-          <p><a href="tel:+1-000-000-0000"><span class="ph">[PHONE]</span></a></p>
-          <p><a href="mailto:placeholder@example.com"><span class="ph">[EMAIL]</span></a></p>
-          <p><span class="ph">[STREET ADDRESS — CONFIRM]</span></p>
-          <p><span class="ph">[CITY]</span>, <span class="ph">[STATE]</span></p>
-        </address>
+    <div class="ft-grid">
+      <div class="ft-brand">
+        <span class="fw">Kilnwood</span><span class="fs">Aesthetics Clinic</span>
+        <p style="margin-top:16px">Facials, skin treatments, injectables, laser and body treatments. Every treatment follows a consultation with a licensed practitioner.</p>
       </div>
-      <nav aria-label="Footer">
-        <h2>Pages</h2>
+      <div>
+        <h2>Visit</h2>
+        <p>214 Sample Street, Suite 3, Anytown, ST 00000<br><a href="tel:+1-555-0148-2210">(555) 0148-2210</a><br><a href="mailto:hello@kilnwood.example">hello@kilnwood.example</a></p>
+        <p>Tue–Thu 9am–7pm · Fri 9am–6pm<br>Sat 9am–4pm · Sun &amp; Mon closed</p>
+      </div>
+      <div>
+        <h2>Clinic</h2>
         <ul>
           <li><a href="treatments.html">Treatments</a></li>
-          <li><a href="downtime.html">Recovery</a></li>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="consultation.html">Consultation</a></li>
-          <li><a href="about.html">About</a></li>
+          <li><a href="pricing.html">Pricing &amp; packages</a></li>
+          <li><a href="downtime.html">Recovery &amp; aftercare</a></li>
+          <li><a href="consultation.html">Book a consultation</a></li>
+          <li><a href="about.html">About the clinic</a></li>
           <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
-      <div>
-        <h2>Money</h2>
-        <ul>
-          <li><a href="pricing.html">Pricing</a></li>
-          <li><a href="pricing.html#packages">Packages and memberships</a></li>
-          <li><span class="ph">[PAYMENT METHODS — CONFIRM]</span></li>
-          <li style="margin-top:8px"><span class="ph">[FINANCE — IF OFFERED, CONFIRM PROVIDER AND ITS OWN DISCLOSURE REQUIREMENTS]</span></li>
         </ul>
       </div>
       <div>
-        <h2>Legal and access</h2>
+        <h2>Information</h2>
         <ul>
-          <li><a href="privacy.html">Privacy (draft)</a></li>
-          <li><a href="terms.html">Terms (draft)</a></li>
           <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="privacy.html">Privacy notice</a></li>
+          <li><a href="terms.html">Terms of use</a></li>
         </ul>
       </div>
     </div>
-    <div class="foot-licence licence" aria-label="Licensing and product disclosures"><ul>
-      <li><span class="ph">[MEDICAL DIRECTOR — CONFIRM]</span></li>
-      <li><span class="ph">[PRACTITIONER LICENCES AND NUMBERS]</span></li>
-      <li><span class="ph">[LICENCE DISPLAY REQUIREMENT — CONFIRM]</span></li>
-      <li><span class="ph">[PRODUCTS AND DEVICES — CONFIRM, AND CONFIRM MANUFACTURER MARKETING PERMISSIONS]</span></li>
-      <li><span class="ph">[RESULTS VARY — CONFIRM WORDING WITH THE MEDICAL DIRECTOR]</span></li>
-    </ul></div>
-    <div class="foot-base">
-      <p><strong>DEMO — ThinkFirst Studios · [Your name here]</strong></p>
-      <p>Fictional demo business — not a real clinic. No patient, provider or person depicted. No product or device named.</p>
-      <p>Photographs are licensed stock of empty rooms and objects, standing in for the clinic's own rooms.</p>
-      <p>© <span data-year>[YEAR]</span> Kilnwood Aesthetics Clinic (fictional)</p>
+    <div class="ft-base">
+      <p style="margin:0">© <span data-year>2026</span> Kilnwood Aesthetics Clinic — a fictional business. Names, prices, reviews and contact details on this site are sample content for a website demo.</p>
+      <p style="margin:0">Treatment suitability is decided at an in-person consultation. Individual results vary.</p>
     </div>
   </div>
 </footer>
-<div class="sticky-bar" aria-label="Quick actions">
-  <a class="btn btn--primary" href="consultation.html">Book a consultation</a>
-  <a class="btn btn--outline" href="tel:+1-000-000-0000">Call <span class="ph">[PHONE]</span></a>
-</div>
+<p class="demo-marker">DEMO — ThinkFirst Studios · [Your name here]</p>
+<script src="script.js" defer></script>
 </body>
 </html>

@@ -4,158 +4,104 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Accessibility — Haverlock Therapy Group</title>
-<meta name="description" content="Fictional demo. Step-free entry, parking, lift or stairs, restroom, a quiet waiting space, and whether you can wait in your car and be called.">
+<meta name="description" content="Fictional demo. Accessibility of the website and the practice rooms.">
 <meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#121212">
 <meta property="og:title" content="Accessibility — Haverlock Therapy Group">
-<meta property="og:description" content="Fictional demo. Step-free entry, parking, lift or stairs, restroom, a quiet waiting space, and whether you can wait in your car and be called.">
+<meta property="og:description" content="Fictional demo. Accessibility of the website and the practice rooms.">
 <meta property="og:type" content="website">
-<link rel="preload" href="assets/fonts/gelasio-roman-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/oxygen-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/playfair-var.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<div class="top-stack">
-<section class="crisis crisis--top" aria-labelledby="crisis-h-top">
+<aside class="crisis-strip" aria-label="Crisis support">
   <div class="wrap">
-    <h2 id="crisis-h-top">If you need help now</h2>
-    <p><span class="ph">[CRISIS RESOURCES — CLIENT TO SUPPLY CURRENT LOCAL AND NATIONAL LINES]</span></p>
-    <p class="crisis-meta"><span><span class="ph">[OWNER — NAME]</span></span><span><span class="ph">[REVIEWED — DATE]</span></span></p>
+    <p><span class="crisis-dot" aria-hidden="true"></span>If you&rsquo;re in crisis or thinking about suicide, <a href="tel:988">call</a> or <a href="sms:988">text 988</a> (Suicide &amp; Crisis Lifeline). In an emergency, call <a href="tel:911">911</a>.</p>
+    <a class="more" href="crisis.html">More crisis support &rarr;</a>
   </div>
-</section>
+</aside>
 <a class="skip-link" href="#main">Skip to main content</a>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="wordmark" href="index.html">Haverlock Therapy Group</a>
-    <div class="header-actions">
-      <a class="header-find" href="find-a-therapist.html">Find a therapist</a>
-      <a class="header-call" href="tel:+15555550100">Call&nbsp;<span class="ph">[PHONE — PLACEHOLDER]</span></a>
-      <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden>Menu</button>
-    </div>
+    <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8z" fill="currentColor" opacity=".22"/><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8zM12 8v13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Haverlock</span><span class="visually-hidden"> Therapy Group, home</span></a>
     <nav id="site-nav" class="site-nav" aria-label="Primary">
       <button type="button" class="menu-close" hidden>Close menu</button>
       <ul>
-      <li class="nav-help"><a href="crisis.html">If you need help now</a></li>
-      <li><a href="find-a-therapist.html">Find a therapist</a></li>
-      <li><a href="fees-and-insurance.html">Fees &amp; insurance</a></li>
-      <li><a href="services.html">What we offer</a></li>
-      <li><a href="first-appointment.html">First appointment</a></li>
-      <li><a href="accessibility.html" aria-current="page">Accessibility</a></li>
-      <li><a href="about.html">About</a></li>
+        <li class="nav-help"><a href="crisis.html">If you need help now</a></li><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="find-a-therapist.html">Find a therapist</a></li><li class="nav-extra"><a href="fees-and-insurance.html">Fees &amp; insurance</a></li><li class="nav-extra"><a href="first-appointment.html">First appointment</a></li><li class="nav-extra"><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
+    <a class="btn-ghost header-cta" href="contact.html">Request an appointment</a>
+    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden><span class="bars" aria-hidden="true"></span>Menu</button>
   </div>
 </header>
-</div>
 <main id="main" tabindex="-1">
-<div class="page-head">
+<section class="page-head">
+  <div class="rings" aria-hidden="true"><span></span><span></span><span></span></div>
   <div class="wrap">
-    <h1>Accessibility</h1>
-    <p>Getting to the building, getting in, and where you can wait. Each answer below is supplied by the practice. <span class="ph">[ACCESSIBILITY — CONFIRM: STEP-FREE ENTRY? ACCESSIBLE PARKING? ACCESSIBLE RESTROOM? IS THERE A LIFT? IS THERE A QUIET WAITING SPACE?]</span></p>
-  </div>
-</div>
-<aside class="licence-strip" aria-label="Licences">
-  <div class="wrap"><p><span class="ph">[WHAT LICENCES ARE HELD — CONFIRM, PER CLINICIAN]</span><span class="sep" aria-hidden="true">·</span><span class="ph">[PRACTITIONER LICENCES AND NUMBERS — CONFIRM, PER STATE]</span><span class="sep" aria-hidden="true">·</span><span class="ph">[DOES THIS STATE REQUIRE A LICENCE NUMBER IN ADVERTISING? — CONFIRM]</span><span class="sep" aria-hidden="true">·</span><span class="ph">[STATES LICENSED FOR TELEHEALTH — CONFIRM, PER CLINICIAN]</span></p></div>
-</aside>
-<section class="section" aria-labelledby="ac-qa-h">
-  <div class="wrap">
-    <h2 id="ac-qa-h">Questions, answered</h2>
-<dl class="qa">
-  <div><dt>Step-free entry</dt><dd><span class="ph">[STEP-FREE ENTRY? — CONFIRM]</span></dd></div>
-  <div><dt>Parking</dt><dd><span class="ph">[PARKING — CONFIRM]</span></dd></div>
-  <div><dt>Accessible parking</dt><dd><span class="ph">[ACCESSIBLE PARKING? — CONFIRM]</span></dd></div>
-  <div><dt>Public transport</dt><dd><span class="ph">[PUBLIC TRANSPORT — CONFIRM]</span></dd></div>
-  <div><dt>Lift or stairs</dt><dd><span class="ph">[LIFT OR STAIRS — CONFIRM]</span></dd></div>
-  <div><dt>Door width</dt><dd><span class="ph">[DOOR WIDTH — CONFIRM]</span></dd></div>
-  <div><dt>Restroom</dt><dd><span class="ph">[RESTROOM — CONFIRM]</span></dd></div>
-  <div><dt>Is there a quiet waiting space?</dt><dd><span class="ph">[IS THERE A QUIET WAITING SPACE? — CONFIRM]</span></dd></div>
-  <div><dt>Can I wait outside or in my car and be called?</dt><dd><span class="ph">[CAN I WAIT OUTSIDE OR IN MY CAR AND BE CALLED? — CONFIRM]</span></dd></div>
-  <div><dt>Who to call ahead</dt><dd><span class="ph">[WHO TO CALL AHEAD — CONFIRM]</span></dd></div>
-</dl>
+    <p class="pill">Accessibility</p>
+    <h1>Accessible to <span class="accent">everyone</span></h1>
+    <p class="lead">We want both our website and our rooms to work for everyone who needs them.</p>
   </div>
 </section>
-<section class="section reveal" aria-labelledby="ac-photo-h">
-  <div class="wrap">
-    <h2 id="ac-photo-h">The entrance and the waiting area</h2>
-<div class="photo-row"><figure class="photo ratio-16x9" data-slot="BUILDING 16:9">
-  <img src="assets/img/building-entrance-800.webp" srcset="assets/img/building-entrance-800.webp 800w, assets/img/building-entrance-1600.webp 1600w" sizes="(min-width: 480px) 50vw, 100vw" width="800" height="450" alt="A plain white and grey street frontage with black doors, a short flight of stone steps and a brick pavement" loading="lazy" decoding="async">
-</figure>
-<figure class="photo ratio-3x2" data-slot="ROOM 02 3:2">
-  <img src="assets/img/waiting-sofa-800.webp" srcset="assets/img/waiting-sofa-800.webp 800w, assets/img/waiting-sofa-1600.webp 1600w" sizes="(min-width: 480px) 50vw, 100vw" width="800" height="533" alt="An empty grey corner sofa and a low table in a plain white room with a wooden floor" loading="lazy" decoding="async">
-</figure>
-</div><div class="photo-row" style="margin-top:1rem"><figure class="photo ratio-1x1" data-slot="DETAIL 03 1:1">
-  <img src="assets/img/detail-hook-480.webp" srcset="assets/img/detail-hook-480.webp 480w, assets/img/detail-hook-960.webp 960w" sizes="(min-width: 480px) 50vw, 100vw" width="480" height="480" alt="A single metal coat hook on a plain wall" loading="lazy" decoding="async">
-  <figcaption>Coat hooks. <span class="ph">[WHERE TO LEAVE A COAT OR BAG — CONFIRM]</span></figcaption>
-</figure>
-</div>  </div>
-</section>
-<section class="section reveal" aria-labelledby="ac-site-h">
-  <div class="wrap">
-    <h2 id="ac-site-h">This website</h2>
-<p>This site is built to be read with a keyboard, a screen reader, zoomed text, and with motion turned off. If something on it does not work for you, <span class="ph">[WHO TO TELL, AND HOW — CONFIRM]</span></p>
-<p><span class="ph">[ACCESSIBILITY STATEMENT — PRACTICE TO CONFIRM; NO CONFORMANCE CLAIM IS MADE]</span></p>
+
+<section class="section tight">
+  <div class="wrap prose">
+    <p class="notice">Sample content for a fictional practice. A real practice would have this reviewed before publishing.</p>
+    
+<h2>This website</h2>
+<p>This site aims to meet WCAG 2.2 level AA. It works with a keyboard and screen readers, respects reduced-motion settings, keeps text readable when zoomed to 200%, and works without JavaScript.</p>
+<ul><li>A skip link at the top of every page</li><li>Visible focus outlines on every link and control</li><li>Text contrast of at least 4.5:1 throughout</li><li>Descriptive alternative text for every photograph</li><li>No auto-playing media and no time limits</li></ul>
+<h2>Our rooms</h2>
+<p>Step-free entrance from the street, a lift to the second floor, an accessible restroom and seating with and without arms in every room. Assistance animals are welcome.</p>
+<h3>Interpreters and other needs</h3>
+<p>We can arrange ASL interpreters at no cost to you, and offer online sessions with captions. Tell us what would help when you get in touch.</p>
+<h2>Tell us what isn&rsquo;t working</h2>
+<p>If something on this site or in our rooms is hard to use, email <a href="mailto:hello@haverlock.example">hello@haverlock.example</a> or call (555) 555-0142. We aim to reply within five working days.</p>
   </div>
 </section>
 </main>
-<section class="crisis crisis--foot" aria-labelledby="crisis-h-foot">
-  <div class="wrap">
-    <h2 id="crisis-h-foot">If you need help now</h2>
-    <p><span class="ph">[CRISIS RESOURCES — CLIENT TO SUPPLY CURRENT LOCAL AND NATIONAL LINES]</span></p>
-    <p class="crisis-meta"><span><span class="ph">[OWNER — NAME]</span></span><span><span class="ph">[REVIEWED — DATE]</span></span></p>
-  </div>
-</section>
 <footer class="site-footer">
   <div class="wrap">
-    <div class="footer-cols">
+    <p class="foot-big">Whenever you&rsquo;re ready,<br><a href="contact.html">we&rsquo;re here to listen.</a></p>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8z" fill="currentColor" opacity=".22"/><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8zM12 8v13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Haverlock Therapy Group</span></a>
+        <p>Individual, couples and group therapy for adults, in person and online. A fictional practice, built as a demonstration website.</p>
+      </div>
+      <div>
+        <h2>Visit</h2>
+        <p>48 Haverlock Street, Suite 2<br>Anytown, ST 00000</p>
+        <p class="muted small">Mon&ndash;Thu 8am&ndash;8pm<br>Fri 8am&ndash;4pm &middot; Sat by arrangement</p>
+      </div>
       <div>
         <h2>Contact</h2>
-        <address>
-          <p><a href="tel:+15555550100"><span class="ph">[PHONE — PLACEHOLDER]</span></a></p>
-          <p><a href="mailto:hello@example.com"><span class="ph">[EMAIL — PLACEHOLDER]</span></a></p>
-          <p><span class="ph">[CITY]</span>, <span class="ph">[STATE]</span></p>
-        </address>
-        <p><span class="ph">[WHO ANSWERS, AND HOW LONG A REPLY TAKES — CONFIRM]</span></p>
+        <ul>
+          <li><a href="tel:+15555550142">(555) 555-0142</a></li>
+          <li><a href="mailto:hello@haverlock.example">hello@haverlock.example</a></li>
+          <li><a href="contact.html">Request an appointment</a></li>
+        </ul>
       </div>
       <div>
-        <h2>Pages</h2>
+        <h2>Explore</h2>
         <ul>
-          <li><a href="crisis.html">If you need help now</a></li>
+          <li><a href="about.html">About us</a></li>
+          <li><a href="services.html">Services</a></li>
           <li><a href="find-a-therapist.html">Find a therapist</a></li>
-          <li><a href="services.html">What we offer</a></li>
-          <li><a href="first-appointment.html">First appointment</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li><a href="fees-and-insurance.html">Fees &amp; insurance</a></li>
+          <li><a href="first-appointment.html">Your first appointment</a></li>
+          <li><a href="crisis.html">If you need help now</a></li>
         </ul>
-      </div>
-      <div>
-        <h2>Money</h2>
-        <ul>
-          <li><a href="fees-and-insurance.html">Fees, insurance and the sliding scale</a></li>
-        </ul>
-        <p><span class="ph">[PAYMENT METHODS — CONFIRM]</span></p>
-        <p><span class="ph">[LATE CANCELLATION POLICY — CLIENT TO SUPPLY]</span></p>
-      </div>
-      <div>
-        <h2>Legal</h2>
-        <ul>
-          <li><a href="privacy.html">Privacy</a></li>
-          <li><a href="terms.html">Terms</a></li>
-          <li><a href="accessibility.html">Accessibility</a></li>
-        </ul>
-        <p><span class="ph">[NOTICE OF PRIVACY PRACTICES — PRACTICE'S COUNSEL TO SUPPLY]</span></p>
       </div>
     </div>
-    <div class="footer-licence">
-      <p><span class="ph">[WHAT LICENCES ARE HELD — CONFIRM, PER CLINICIAN]</span><span class="sep" aria-hidden="true"> · </span><span class="ph">[PRACTITIONER LICENCES AND NUMBERS]</span><span class="sep" aria-hidden="true"> · </span><span class="ph">[LICENCE DISPLAY REQUIREMENT — CONFIRM]</span><span class="sep" aria-hidden="true"> · </span><span class="ph">[STATES LICENSED FOR TELEHEALTH — CONFIRM]</span><span class="sep" aria-hidden="true"> · </span><span class="ph">[WE CANNOT TELL YOU WHAT YOUR PLAN COVERS — CONFIRM WORDING]</span></p>
-    </div>
-    <div class="footer-legal">
-      <p>DEMO — ThinkFirst Studios · [Your name here]</p>
-      <p>Fictional demo business — not a real practice. No client, clinician or person depicted.</p>
-      <p>&copy; <span data-year>2026</span> Haverlock Therapy Group · Established <span class="ph">[YEAR ESTABLISHED — PLACEHOLDER]</span></p>
+    <p class="foot-crisis">We are not an emergency service and messages are read during office hours. If you&rsquo;re in crisis, <a href="tel:988">call</a> or <a href="sms:988">text 988</a>, or call <a href="tel:911">911</a> in an emergency.</p>
+    <div class="foot-legal">
+      <p>&copy; <span data-year>2026</span> Haverlock Therapy Group &middot; Fictional demo practice</p>
+      <p><a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a> &nbsp;&middot;&nbsp; <a href="accessibility.html">Accessibility</a></p>
     </div>
   </div>
 </footer>
-<!-- 18. No sticky mobile bar. Deliberately: this template makes no standing requests. See PROMPT.md section plan 18. -->
-<div class="demo-marker" aria-label="DEMO — ThinkFirst Studios · [Your name here]">DEMO — THINKFIRST STUDIOS · [YOUR NAME HERE]</div>
+<p class="demo-marker"><b>DEMO</b> &mdash; ThinkFirst Studios &middot; [Your name here]</p>
 <script src="script.js" defer></script>
 </body>
 </html>

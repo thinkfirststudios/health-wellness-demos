@@ -1,12 +1,13 @@
 /* Haverlock Therapy Group — fictional demo template (ThinkFirst Studios).
    Progressive enhancement only. Every page is complete and readable without this file.
+   No scroll reveals or fades: all content is visible from first paint.
    Nothing here stores, sends or reports anything. No analytics, no cookies, no storage. */
 (function () {
   'use strict';
   var root = document.documentElement;
   root.classList.add('js');
 
-  /* © year — scripted, never hardcoded (B16) */
+  /* Footer year */
   var years = document.querySelectorAll('[data-year]');
   for (var y = 0; y < years.length; y++) { years[y].textContent = String(new Date().getFullYear()); }
 
@@ -71,7 +72,7 @@
         items[j].hidden = !ok;
         if (ok) { shown++; }
       }
-      if (count) { count.textContent = shown + ' of ' + total + ' clinicians match.'; }
+      if (count) { count.textContent = shown + ' of ' + total + (total === 1 ? ' therapist' : ' therapists') + ' shown.'; }
       if (empty) { empty.hidden = shown !== 0; }
       if (list) { list.hidden = shown === 0; }
     }
@@ -107,7 +108,7 @@
     function label() {
       if (!select || !button) { return; }
       var opt = select.options[select.selectedIndex];
-      button.textContent = select.value ? 'Request a first appointment with ' + opt.text : 'Request a first appointment';
+      button.textContent = select.value ? 'Request an appointment with ' + opt.text.split(',')[0] : 'Request an appointment';
     }
     if (select) {
       var pre = params.get('clinician');
@@ -121,17 +122,4 @@
     });
   }
 
-  /* Section reveals: a single 180ms opacity fade, fired once. Off under reduced motion. */
-  var reveals = document.querySelectorAll('.reveal');
-  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  if (reduce || !('IntersectionObserver' in window)) {
-    for (var a = 0; a < reveals.length; a++) { reveals[a].classList.add('is-in'); }
-  } else {
-    var io = new IntersectionObserver(function (entries) {
-      for (var e = 0; e < entries.length; e++) {
-        if (entries[e].isIntersecting) { entries[e].target.classList.add('is-in'); io.unobserve(entries[e].target); }
-      }
-    }, { rootMargin: '0px 0px -5% 0px' });
-    for (var b = 0; b < reveals.length; b++) { io.observe(reveals[b]); }
-  }
 })();

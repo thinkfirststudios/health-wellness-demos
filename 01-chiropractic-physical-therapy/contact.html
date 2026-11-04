@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — Cornerpost Spine & Movement (demo)</title>
+<meta name="description" content="Phone, address, hours and routes for existing patients. Fictional demo template.">
+<meta name="robots" content="noindex, nofollow">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Contact — Cornerpost Spine & Movement (demo)">
+<meta property="og:description" content="Phone, address, hours and routes for existing patients. Fictional demo template.">
+<meta name="theme-color" content="#F1E4DE">
+<link rel="preload" href="assets/fonts/kanit-300.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/arvo-700.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css">
+<script>document.documentElement.classList.add('js');</script>
+<script src="script.js" defer></script>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+<div class="demo-marker" role="note" aria-label="Demo marker"><span>DEMO — ThinkFirst Studios · [Your name here]</span></div>
+<div class="utility"><div class="wrap">
+  <a class="phone" href="tel:+10000000000">Call&nbsp;<span class="ph">[PHONE — PLACEHOLDER]</span></a>
+  <span><span class="ph">[EMAIL — PLACEHOLDER]</span></span>
+  <span><span class="ph">[CITY]</span>, <span class="ph">[STATE]</span></span>
+  <a class="utility__end bare" href="contact.html#existing">For existing patients</a>
+</div></div>
+<header class="site-header"><div class="wrap">
+  <a class="wordmark" href="index.html"><b>Cornerpost</b><i>Spine &amp; Movement</i></a>
+  <button class="nav-toggle btn btn--outline" type="button" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+  <nav class="primary-nav" id="primary-nav" aria-label="Primary">
+    <button class="nav-close btn btn--outline" type="button">Close menu</button>
+    <ul><li><a href="care.html">What we do</a></li><li><a href="first-visit.html">The first visit</a></li><li><a href="insurance-and-fees.html">Insurance &amp; fees</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
+  </nav>
+  <div class="header-actions"><a class="btn btn--signal" href="book.html">Book a first appointment</a> <a class="phone" href="tel:+10000000000">Call&nbsp;<span class="ph">[PHONE — PLACEHOLDER]</span></a></div>
+</div></header>
+<main id="main" tabindex="-1">
+<section class="page-head"><div class="wrap"><p class="eyebrow">Call, write or visit</p><h1>Contact</h1><p class="lede"><span class="ph">[PLACEHOLDER: 1–2 sentences — client to supply]</span></p></div></section>
+<div class="licence-strip" role="note" aria-label="Licences and scope"><div class="wrap"><ul><li class="licence-strip__label">Licences</li><li><span class="ph">[PRACTITIONER LICENCES AND NUMBERS — CONFIRM, PER STATE]</span></li><li><span class="ph">[DOES THIS STATE REQUIRE A LICENCE NUMBER IN ADVERTISING? — CONFIRM]</span></li><li><span class="ph">[IS PHYSICAL THERAPY PROVIDED IN-HOUSE BY A LICENSED PT? — CONFIRM]</span></li></ul></div></div>
+<section class="section " aria-labelledby="reach-title"><div class="wrap"><div class="split">
+  <div class="reveal">
+    <h2 id="reach-title">Reach the clinic</h2>
+    <address style="font-style:normal; display:grid; gap:.4rem; margin-bottom:1.5rem"><a class="phone" href="tel:+10000000000">Call&nbsp;<span class="ph">[PHONE — PLACEHOLDER]</span></a><span><span class="ph">[EMAIL — PLACEHOLDER]</span></span><span><span class="ph">[STREET ADDRESS — PLACEHOLDER]</span></span><span><span class="ph">[CITY]</span>, <span class="ph">[STATE]</span> <span class="ph">[ZIP]</span></span></address>
+    <p class="hipaa-note"><span class="ph">[HIPAA-COMPLIANT INTAKE — CONFIRM PLATFORM AND BAA]</span></p>
+<form class="form" id="contact-form" action="#" method="post" data-demo novalidate>
+  <div class="field"><label for="contact-form-name">Your name</label><input id="contact-form-name" name="name" type="text" autocomplete="name" required></div>
+  <div class="field"><label for="contact-form-method">Preferred contact method</label>
+    <select id="contact-form-method" name="method" required><option value="">Choose one</option><option>Phone call</option><option>Text message</option><option>Email</option></select></div>
+  <div class="field"><label for="contact-form-detail">Phone number or email for that method</label><input id="contact-form-detail" name="contact" type="text" autocomplete="on" required></div>
+  <div class="field"><label for="contact-form-reason">What is this about?</label>
+    <select id="contact-form-reason" name="reason" required><option value="">Choose one</option><option>New patient</option><option>Existing patient</option><option>Insurance question</option><option>Something else</option></select>
+    <span class="hint"><span class="ph">[NEW PATIENT / EXISTING PATIENT / INSURANCE QUESTION / SOMETHING ELSE — CONFIRM OPTIONS]</span></span></div>
+  <div class="form-actions"><button class="btn btn--signal" type="submit">Send</button></div>
+  <p class="form-status" role="status" aria-live="polite"></p>
+</form>
+
+  </div>
+  <div class="hours-panel reveal">
+  <h2>Opening hours</h2>
+  <p><a class="phone" href="tel:+10000000000">Call&nbsp;<span class="ph">[PHONE — PLACEHOLDER]</span></a></p>
+  <table class="table table--reflow">
+    <caption>Hours and last appointment, day by day</caption>
+    <thead><tr><th scope="col">Day</th><th scope="col">Open</th><th scope="col">Last appointment</th></tr></thead>
+    <tbody><tr data-day="1"><th scope="row" data-label="Day">Monday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr><tr data-day="2"><th scope="row" data-label="Day">Tuesday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr><tr data-day="3"><th scope="row" data-label="Day">Wednesday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr><tr data-day="4"><th scope="row" data-label="Day">Thursday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr><tr data-day="5"><th scope="row" data-label="Day">Friday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr><tr data-day="6"><th scope="row" data-label="Day">Saturday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr><tr data-day="0"><th scope="row" data-label="Day">Sunday</th><td data-label="Open"><span class="ph">[HOURS — CONFIRM, DAY BY DAY]</span></td><td data-label="Last appointment"><span class="ph">[LAST APPOINTMENT — CONFIRM]</span></td></tr></tbody>
+  </table>
+  <ul class="ph-list ph-list--stack"><li><span class="ph">[SAME-DAY AVAILABILITY — CONFIRM]</span></li><li><span class="ph">[HOLIDAY HOURS — CONFIRM]</span></li><li><span class="ph">[WHO TO CALL OUT OF HOURS — CONFIRM]</span></li></ul>
+</div>
+
+</div></div></section>
+<section class="section section--sheet" aria-labelledby="existing"><div class="wrap"><div class="split split--even">
+  <div class="reveal">
+    <h2 id="existing">For existing patients</h2>
+    <dl class="qa"><div><dt>Reschedule</dt><dd><span class="ph">[RESCHEDULE — CONFIRM ROUTE]</span></dd></div><div><dt>A billing question</dt><dd><span class="ph">[BILLING QUESTION — WHO TO CALL — CONFIRM]</span></dd></div>
+    <div id="records"><dt>Request your records</dt><dd><span class="ph">[RECORDS REQUEST — CONFIRM ROUTE]</span><br><span class="ph">[RECORDS REQUEST PROCESS — CLIENT TO SUPPLY]</span></dd></div></dl>
+  </div>
+  <figure class="split__figure reveal" style="--i:1"><img src="assets/img/frontage-960.webp" srcset="assets/img/frontage-960.webp 960w, assets/img/frontage-1800.webp 1800w" sizes="(min-width: 1024px) 50vw, 100vw" width="960" height="540" alt="A plain white building front with a wooden door under a small canopy, two windows and potted shrubs." style="aspect-ratio:16/9" data-slot="BUILDING — 16:9" loading="lazy" decoding="async"><figcaption><span class="ph">[MAP — CONFIRM WHETHER A THIRD-PARTY EMBED IS ACCEPTABLE]</span></figcaption></figure>
+</div></div></section>
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-cols">
+      <div>
+        <h2>Cornerpost Spine &amp; Movement</h2>
+        <address>
+          <a class="phone" href="tel:+10000000000">Call&nbsp;<span class="ph">[PHONE — PLACEHOLDER]</span></a>
+          <span><span class="ph">[EMAIL — PLACEHOLDER]</span></span>
+          <span><span class="ph">[STREET ADDRESS — PLACEHOLDER]</span></span>
+          <span><span class="ph">[CITY]</span>, <span class="ph">[STATE]</span> <span class="ph">[ZIP]</span></span>
+        </address>
+      </div>
+      <nav aria-label="Footer">
+        <h2>The site</h2>
+        <ul><li><a href="index.html">Home</a></li><li><a href="care.html">What we do</a></li><li><a href="first-visit.html">The first visit</a></li><li><a href="insurance-and-fees.html">Insurance &amp; fees</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="book.html">Book a first appointment</a></li></ul>
+      </nav>
+      <div>
+        <h2>Existing patients</h2>
+        <ul>
+          <li><a href="contact.html#existing">Reschedule an appointment</a></li>
+          <li><a href="contact.html#existing">A billing question</a></li>
+          <li><a href="contact.html#records">Request your records</a></li>
+        </ul>
+        <p><span class="ph">[RECORDS REQUEST PROCESS — CLIENT TO SUPPLY]</span></p>
+      </div>
+      <div>
+        <h2>Legal</h2>
+        <ul>
+          <li><a href="privacy.html">Privacy (draft)</a></li>
+          <li><a href="terms.html">Terms (draft)</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="footer-strip"><div class="wrap"><ul>
+    <li><span class="ph">[PRACTITIONER LICENCES AND NUMBERS]</span></li><li><span class="ph">[LICENCE DISPLAY REQUIREMENT — CONFIRM]</span></li><li><span class="ph">[INSURERS ACCEPTED — CONFIRM]</span></li><li><span class="ph">[WE CANNOT TELL YOU WHAT YOUR PLAN COVERS — CONFIRM WORDING]</span></li>
+  </ul></div></div>
+  <div class="footer-base"><div class="wrap">
+    <p><strong>DEMO — ThinkFirst Studios · [Your name here]</strong></p>
+    <p>Fictional demo business — not a real clinic. No patient, practitioner or person depicted.</p>
+    <p>&copy; <span data-year></span> Cornerpost Spine &amp; Movement (fictional). Photographs: Pexels licence, see assets/CREDITS.md.</p>
+  </div></div>
+</footer>
+<div class="mobile-bar" aria-label="Quick actions">
+  <a class="btn btn--signal" href="book.html">Book a first appointment</a>
+  <a class="btn btn--outline" href="tel:+10000000000">Call&nbsp;<span class="ph">[PHONE]</span></a>
+</div>
+</body>
+</html>

@@ -126,16 +126,15 @@ ul, ol { padding-left: 1.2em; }
 .wordmark { text-align: center; margin: 0; color: #fff; text-shadow: 0 2px 24px rgba(0,0,0,.35); }
 .wordmark .wm { display: block; font-family: var(--display); font-size: clamp(3.6rem, 15vw, 9rem); line-height: .95; letter-spacing: .005em; }
 .wordmark .wm-script { display: block; font-family: var(--script); font-size: clamp(1.6rem, 5.5vw, 2.6rem); line-height: 1; margin-top: -.12em; color: #fff; }
-.hero-text { margin-top: auto; max-width: 300px; color: #f4f0ea; font-size: 14px; line-height: 1.55; text-shadow: 0 1px 10px rgba(0,0,0,.6); }
+.hero-text { margin: auto auto 0; max-width: 440px; text-align: center; color: #f4f0ea; font-size: 15px; line-height: 1.6; text-shadow: 0 1px 10px rgba(0,0,0,.6); }
 .hero-text p { margin-bottom: 14px; }
 @media (min-width: 900px) {
   .hero { min-height: 0; height: clamp(560px, 46vw, 700px); }
   .hero .hero-img { object-position: 50% 0%; }
   .hero::after { background:
-    linear-gradient(90deg, rgba(18,16,14,.6) 0%, rgba(18,16,14,.15) 34%, rgba(18,16,14,0) 60%),
-    linear-gradient(180deg, rgba(18,16,14,.45) 0%, rgba(18,16,14,0) 40%, rgba(18,16,14,.12) 100%); }
+    linear-gradient(180deg, rgba(18,16,14,.45) 0%, rgba(18,16,14,0) 38%, rgba(18,16,14,.1) 62%, rgba(18,16,14,.72) 100%); }
   .hero-inner { padding-top: 22px; }
-  .hero-text { position: absolute; left: var(--pad); top: 96px; margin: 0; max-width: 250px; font-size: 13.5px; }
+  .hero-text { margin-bottom: 26px; max-width: 460px; font-size: 16px; }
 }
 
 /* ---------- Page hero (inner pages) ---------- */

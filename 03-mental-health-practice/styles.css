@@ -132,7 +132,7 @@ html:not(.js) .site-nav ul { display: flex; flex-wrap: wrap; gap: 6px 18px; }
   background:
     linear-gradient(180deg, rgba(18, 18, 18, .55) 0%, rgba(18, 18, 18, 0) 18%, rgba(18, 18, 18, 0) 34%, rgba(18, 18, 18, .55) 58%, rgba(18, 18, 18, .92) 78%, var(--bg) 96%),
     linear-gradient(180deg, rgba(64, 112, 124, .38) 0%, rgba(64, 112, 124, 0) 55%); }
-.hero-inner { width: 100%; padding-bottom: clamp(56px, 9vh, 110px); display: grid; gap: 22px; }
+.hero-inner { width: 100%; padding-bottom: clamp(110px, 19vh, 210px); display: grid; gap: 22px; }
 .hero h1 { margin: 0; max-width: 13.6ch; font-size: clamp(2.5rem, 5.6vw, 4.4rem); line-height: 1.07; text-shadow: 0 2px 30px rgba(0, 0, 0, .35); }
 .hero-side { max-width: 360px; }
 .hero-side p { color: rgba(255, 255, 255, .86); font-size: .98rem; line-height: 1.6; }

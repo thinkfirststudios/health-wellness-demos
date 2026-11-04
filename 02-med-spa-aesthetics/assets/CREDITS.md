@@ -6,7 +6,7 @@ All photographs come from Pexels under the Pexels licence, which allows free com
 
 | File(s) | Pexels ID and source | What is in frame | Used on |
 |---|---|---|---|
-| `img/hero-facial-800/1400/2000.webp` (16:9), `img/hero-facial-tall-600/900.webp` (4:5) | 6663371, https://www.pexels.com/photo/a-person-massaging-a-woman-s-face-6663371/ | An adult woman lying on a beige treatment bed with her eyes closed, while a practitioner's hands support her head and neck during a facial massage | Homepage hero |
+| `img/hero-facial-800/1400/2000.webp` (16:9), `img/hero-facial-tall-600/900.webp` (4:5) | 3757942, https://www.pexels.com/photo/woman-in-wrapped-in-white-towel-lying-on-bed-with-eyes-closed-3757942/ | An adult woman wrapped in a white towel resting on a treatment bed with her eyes closed, beside a tea light and pink flowers, warm window light | Homepage hero |
 | `img/band-stillroom-800/1400/2000.webp` (2:1) | 1926811, https://www.pexels.com/photo/lighted-candles-on-white-candle-holder-1926811/ | A treatment-room still life with four lit tea lights in a white stone holder, folded white towels, a bowl of frangipani and grey stones, on a dark ground | Testimonial band; Aftercare, Contact and Privacy page heroes |
 | `img/facial-cleanse-600/1000.webp` (3:2) | 3985329, https://www.pexels.com/photo/woman-getting-a-facial-treatment-3985329/ | An adult woman in a headband, eyes closed, with gloved hands cleansing her face using cotton pads | Treatments, Pricing, Accessibility and Terms page heroes |
 | `img/serum-peel-600/1000.webp` (3:2) | 19242406, https://www.pexels.com/photo/woman-doing-a-treatment-at-beautician-19242406/ | A close-up of fingers smoothing serum on a client's cheek while a dropper releases a drop | Treatments: facials and peels |

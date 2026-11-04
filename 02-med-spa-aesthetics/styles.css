@@ -130,7 +130,7 @@ ul, ol { padding-left: 1.2em; }
 .hero-text p { margin-bottom: 14px; }
 @media (min-width: 900px) {
   .hero { min-height: 0; height: clamp(560px, 46vw, 700px); }
-  .hero .hero-img { object-position: 50% 40%; }
+  .hero .hero-img { object-position: 50% 0%; }
   .hero::after { background:
     linear-gradient(90deg, rgba(18,16,14,.6) 0%, rgba(18,16,14,.15) 34%, rgba(18,16,14,0) 60%),
     linear-gradient(180deg, rgba(18,16,14,.45) 0%, rgba(18,16,14,0) 40%, rgba(18,16,14,.12) 100%); }

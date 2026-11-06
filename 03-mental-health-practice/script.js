@@ -1,81 +1,61 @@
-/* Haverlock Therapy Group — fictional demo template (ThinkFirst Studios).
-   Progressive enhancement only. Every page is complete and readable without this file.
-   No scroll reveals or fades: all content is visible from first paint.
-   Nothing here stores, sends or reports anything. No analytics, no cookies, no storage. */
+/* Haverlock Therapy Group. Everything here is an enhancement: every page is complete without it.
+   Nothing the visitor selects is stored or sent anywhere. */
 (function () {
   'use strict';
-  var root = document.documentElement;
-  root.classList.add('js');
 
-  /* Footer year */
-  var years = document.querySelectorAll('[data-year]');
-  for (var y = 0; y < years.length; y++) { years[y].textContent = String(new Date().getFullYear()); }
+  var year = document.querySelectorAll('[data-year]');
+  for (var y = 0; y < year.length; y++) { year[y].textContent = new Date().getFullYear(); }
 
-  /* Mobile menu overlay. "If you need help now" is the first item in it. */
-  var toggle = document.querySelector('.menu-toggle');
-  var nav = document.getElementById('site-nav');
-  var closeBtn = nav ? nav.querySelector('.menu-close') : null;
-  function setMenu(open) {
-    root.classList.toggle('nav-open', open);
-    if (toggle) { toggle.setAttribute('aria-expanded', open ? 'true' : 'false'); }
-    if (open && nav) {
-      var first = nav.querySelector('a');
-      if (closeBtn) { closeBtn.focus(); } else if (first) { first.focus(); }
-    } else if (toggle) { toggle.focus(); }
-  }
-  if (toggle && nav) {
-    toggle.hidden = false;
-    if (closeBtn) { closeBtn.hidden = false; closeBtn.addEventListener('click', function () { setMenu(false); }); }
-    toggle.addEventListener('click', function () { setMenu(!root.classList.contains('nav-open')); });
+  /* Menu on narrow screens */
+  var btn = document.querySelector('.menu-btn');
+  var nav = document.getElementById('nav');
+  if (btn && nav) {
+    btn.hidden = false;
+    var setMenu = function (open) {
+      nav.classList.toggle('open', open);
+      document.body.classList.toggle('menu-open', open);
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? 'Close' : 'Menu';
+    };
+    btn.addEventListener('click', function () { setMenu(!nav.classList.contains('open')); });
     document.addEventListener('keydown', function (e) {
-      if (e.key === 'Escape' && root.classList.contains('nav-open')) { setMenu(false); }
+      if (e.key === 'Escape' && nav.classList.contains('open')) { setMenu(false); btn.focus(); }
     });
-    window.addEventListener('resize', function () {
-      if (window.innerWidth >= 1024 && root.classList.contains('nav-open')) { root.classList.remove('nav-open'); toggle.setAttribute('aria-expanded', 'false'); }
-    });
+    window.addEventListener('resize', function () { if (window.innerWidth >= 900) { setMenu(false); } });
   }
 
-  /* THE FIT — filters a published list of clinicians.
-     Within a group, any selected value matches. Across groups, every group with a selection must match.
-     Items are hidden, never reordered. No transition on list changes. No score, no ranking.
-     It reads nothing about the visitor except which buttons are pressed, and it keeps nothing. */
-  var params = new URLSearchParams(window.location.search);
-  var fits = document.querySelectorAll('[data-fit]');
-  for (var f = 0; f < fits.length; f++) { initFit(fits[f], f === 0); }
-
-  function initFit(fit, readParams) {
+  /* THE FIT: narrows a published list. Items are hidden, never reordered, and nothing is scored. */
+  var fit = document.querySelector('[data-fit]');
+  if (fit) {
     var chips = fit.querySelectorAll('.chip');
-    var items = fit.querySelectorAll('[data-clinician]');
+    var entries = fit.querySelectorAll('.entry');
     var count = fit.querySelector('.fit-count');
-    var empty = fit.querySelector('.fit-empty');
-    var list = fit.querySelector('.fit-list');
-    var total = items.length;
+    var empty = fit.querySelector('.empty');
+    var clear = fit.querySelector('.clear');
+    var total = entries.length;
 
-    function apply() {
-      var wanted = {};
+    var apply = function () {
+      var chosen = {};
       for (var i = 0; i < chips.length; i++) {
         if (chips[i].getAttribute('aria-pressed') === 'true') {
           var g = chips[i].getAttribute('data-group');
-          (wanted[g] = wanted[g] || []).push(chips[i].getAttribute('data-value'));
+          (chosen[g] = chosen[g] || []).push(chips[i].getAttribute('data-value'));
         }
       }
       var shown = 0;
-      for (var j = 0; j < items.length; j++) {
+      for (var e = 0; e < entries.length; e++) {
         var ok = true;
-        for (var group in wanted) {
-          if (!Object.prototype.hasOwnProperty.call(wanted, group)) { continue; }
-          var have = (items[j].getAttribute('data-' + group) || '').split(' ');
-          var any = false;
-          for (var k = 0; k < wanted[group].length; k++) { if (have.indexOf(wanted[group][k]) !== -1) { any = true; break; } }
+        for (var group in chosen) {
+          var have = (entries[e].getAttribute('data-' + group) || '').split(' ');
+          var any = chosen[group].some(function (v) { return have.indexOf(v) !== -1; });
           if (!any) { ok = false; break; }
         }
-        items[j].hidden = !ok;
+        entries[e].hidden = !ok;
         if (ok) { shown++; }
       }
-      if (count) { count.textContent = shown + ' of ' + total + (total === 1 ? ' therapist' : ' therapists') + ' shown.'; }
-      if (empty) { empty.hidden = shown !== 0; }
-      if (list) { list.hidden = shown === 0; }
-    }
+      count.textContent = shown + ' of ' + total + ' clinicians match.';
+      empty.hidden = shown !== 0;
+    };
 
     for (var c = 0; c < chips.length; c++) {
       chips[c].addEventListener('click', function () {
@@ -83,43 +63,64 @@
         this.setAttribute('aria-pressed', on ? 'false' : 'true');
         apply();
       });
-      if (readParams) {
-        var g = chips[c].getAttribute('data-group');
-        if (params.getAll(g).indexOf(chips[c].getAttribute('data-value')) !== -1) { chips[c].setAttribute('aria-pressed', 'true'); }
+    }
+    var clearAll = function () {
+      for (var i = 0; i < chips.length; i++) { chips[i].setAttribute('aria-pressed', 'false'); }
+      apply();
+    };
+    clear.addEventListener('click', clearAll);
+    var again = fit.querySelector('.clear-again');
+    if (again) { again.addEventListener('click', function () { clearAll(); clear.focus(); }); }
+
+    /* A link from the services page can preselect one chip. It uses the URL fragment, which never leaves the browser. */
+    var m = /^#with=([a-z]+)$/.exec(window.location.hash);
+    if (m) {
+      var pre = fit.querySelector('.chip[data-group="with"][data-value="' + m[1] + '"]');
+      if (pre) { pre.setAttribute('aria-pressed', 'true'); apply(); }
+    }
+  }
+
+  /* Request forms: carry the room over from a link, and hold nothing after submit. */
+  var forms = document.querySelectorAll('form[data-request]');
+  var r = /^#room=([1-8])$/.exec(window.location.hash);
+  for (var f = 0; f < forms.length; f++) {
+    (function (form) {
+      var who = form.querySelector('select[name="clinician"]');
+      if (r && who) { who.value = 'room-' + r[1]; }
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var msg = form.querySelector('.form-msg');
+        var tel = form.querySelector('input[type="tel"]');
+        var mail = form.querySelector('input[type="email"]');
+        if (!tel.value && !mail.value) {
+          msg.textContent = 'Please give a phone number or an email address so that intake can reply.';
+          tel.focus();
+          return;
+        }
+        form.reset();
+        msg.textContent = 'Thank you. The intake coordinator will reply within one working day.';
+      });
+    })(forms[f]);
+  }
+
+  /* One 180ms fade per section, once. Below the fold only, and never on the crisis links. */
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (!reduce && 'IntersectionObserver' in window) {
+    var secs = document.querySelectorAll('main .sec');
+    var pending = [];
+    var show = function (el) { el.classList.remove('reveal-start'); };
+    var io = new IntersectionObserver(function (items) {
+      items.forEach(function (it) {
+        if (it.isIntersecting) { show(it.target); io.unobserve(it.target); }
+      });
+    }, { rootMargin: '0px 0px -5% 0px' });
+    for (var s = 0; s < secs.length; s++) {
+      if (secs[s].getBoundingClientRect().top > window.innerHeight) {
+        secs[s].classList.add('reveal', 'reveal-start');
+        pending.push(secs[s]);
+        io.observe(secs[s]);
       }
     }
-    var clears = fit.querySelectorAll('.fit-clear');
-    for (var q = 0; q < clears.length; q++) {
-      clears[q].addEventListener('click', function () {
-        for (var i = 0; i < chips.length; i++) { chips[i].setAttribute('aria-pressed', 'false'); }
-        apply();
-      });
-    }
-    apply();
+    window.setTimeout(function () { pending.forEach(show); }, 1400);
   }
-
-  /* Request form — demo only. Nothing is sent anywhere. */
-  var forms = document.querySelectorAll('[data-request-form]');
-  for (var r = 0; r < forms.length; r++) { initForm(forms[r]); }
-  function initForm(form) {
-    var select = form.querySelector('select[name="clinician"]');
-    var button = form.querySelector('button[type="submit"]');
-    var status = form.querySelector('.form-status');
-    function label() {
-      if (!select || !button) { return; }
-      var opt = select.options[select.selectedIndex];
-      button.textContent = select.value ? 'Request an appointment with ' + opt.text.split(',')[0] : 'Request an appointment';
-    }
-    if (select) {
-      var pre = params.get('clinician');
-      if (pre) { for (var i = 0; i < select.options.length; i++) { if (select.options[i].value === pre) { select.selectedIndex = i; } } }
-      select.addEventListener('change', label);
-      label();
-    }
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      if (status) { status.textContent = 'This is a demonstration page. Nothing was sent, and nothing you chose has been kept.'; }
-    });
-  }
-
 })();

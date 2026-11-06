@@ -1,107 +1,80 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Accessibility — Haverlock Therapy Group</title>
-<meta name="description" content="Fictional demo. Accessibility of the website and the practice rooms.">
-<meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#121212">
-<meta property="og:title" content="Accessibility — Haverlock Therapy Group">
-<meta property="og:description" content="Fictional demo. Accessibility of the website and the practice rooms.">
-<meta property="og:type" content="website">
-<link rel="preload" href="assets/fonts/playfair-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=20261104b">
+<title>Accessibility | Haverlock Therapy Group</title>
+<meta name="description" content="Parking, entry, doors, the elevator, restrooms, the quiet waiting space, and waiting in your car to be called.">
+<link rel="icon" href="data:,">
+<link rel="preload" href="assets/fonts/oxygen-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=20261106a">
+<script>document.documentElement.className='js';</script>
+<script src="script.js?v=20261106a" defer></script>
 </head>
 <body>
-<aside class="crisis-strip" aria-label="Crisis support">
-  <div class="wrap">
-    <p><span class="crisis-dot" aria-hidden="true"></span>If you&rsquo;re in crisis or thinking about suicide, <a href="tel:988">call</a> or <a href="sms:988">text 988</a> (Suicide &amp; Crisis Lifeline). In an emergency, call <a href="tel:911">911</a>.</p>
-    <a class="more" href="crisis.html">More crisis support &rarr;</a>
-  </div>
-</aside>
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip" href="#main">Skip to main content</a>
 <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8z" fill="currentColor" opacity=".22"/><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8zM12 8v13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Haverlock</span><span class="visually-hidden"> Therapy Group, home</span></a>
-    <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <button type="button" class="menu-close" hidden>Close menu</button>
-      <ul>
-        <li class="nav-help"><a href="crisis.html">If you need help now</a></li><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="find-a-therapist.html">Find a therapist</a></li><li class="nav-extra"><a href="fees-and-insurance.html">Fees &amp; insurance</a></li><li class="nav-extra"><a href="first-appointment.html">First appointment</a></li><li class="nav-extra"><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="bar">
+    <a class="brand" href="index.html">Haverlock<br> Therapy Group</a>
+    <a class="help" href="crisis.html">If you need help now</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" hidden>Menu</button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul><li class="nav-help"><a href="crisis.html">If you need help now</a></li><li><a href="find-a-therapist.html">Find a therapist</a></li><li><a href="fees-and-insurance.html">Fees &amp; insurance</a></li><li><a href="services.html">What we offer</a></li><li><a href="first-appointment.html">First appointment</a></li><li><a href="accessibility.html" aria-current="page">Accessibility</a></li><li><a href="about.html">About</a></li></ul>
     </nav>
-    <a class="btn-ghost header-cta" href="contact.html">Request an appointment</a>
-    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden><span class="bars" aria-hidden="true"></span>Menu</button>
+    <a class="call" href="tel:+16105550147">Call (610) 555-0147</a>
   </div>
 </header>
-<main id="main" tabindex="-1">
-<section class="page-head">
-  <div class="rings" aria-hidden="true"><span></span><span></span><span></span></div>
-  <div class="wrap">
-    <p class="pill">Accessibility</p>
-    <h1>Accessible to <span class="accent">everyone</span></h1>
-    <p class="lead">We want both our website and our rooms to work for everyone who needs them.</p>
-  </div>
-</section>
-
-<section class="section tight">
-  <div class="wrap prose">
-    <p class="notice">Sample content for a fictional practice. A real practice would have this reviewed before publishing.</p>
-    
-<h2>This website</h2>
-<p>This site aims to meet WCAG 2.2 level AA. It works with a keyboard and screen readers, respects reduced-motion settings, keeps text readable when zoomed to 200%, and works without JavaScript.</p>
-<ul><li>A skip link at the top of every page</li><li>Visible focus outlines on every link and control</li><li>Text contrast of at least 4.5:1 throughout</li><li>Descriptive alternative text for every photograph</li><li>No auto-playing media and no time limits</li></ul>
-<h2>Our rooms</h2>
-<p>Step-free entrance from the street, a lift to the second floor, an accessible restroom and seating with and without arms in every room. Assistance animals are welcome.</p>
-<h3>Interpreters and other needs</h3>
-<p>We can arrange ASL interpreters at no cost to you, and offer online sessions with captions. Tell us what would help when you get in touch.</p>
-<h2>Tell us what isn&rsquo;t working</h2>
-<p>If something on this site or in our rooms is hard to use, email <a href="mailto:hello@haverlock.example">hello@haverlock.example</a> or call (555) 555-0142. We aim to reply within five working days.</p>
-  </div>
-</section>
+<div class="subbar"><a href="find-a-therapist.html">Find a therapist</a><a href="tel:+16105550147">Call (610) 555-0147</a></div>
+<main id="main">
+<div class="page-head"><div class="wrap"><h1>Accessibility</h1><p>What the building is like, so that you can decide before you travel. If something you need isn&rsquo;t listed here, please ask.</p></div></div><aside class="license" aria-label="Licenses">
+  <div class="wrap"><p>Our clinicians hold Pennsylvania licenses, and the license type differs by person. Each entry on <a href="find-a-therapist.html">Find a therapist</a> shows that person&rsquo;s license and the states where they can see virtual clients. Intake can give you any clinician&rsquo;s license number on request.</p></div>
+</aside><section class="sec"><div class="wrap ledger"><h2>Getting in</h2><div><div class="split"><div class="pairs"><div><h3>Is the entry step-free?</h3><p>Yes. The front entrance on Pruett Street is level with the sidewalk and the parking lot, and the door is 36 inches wide.</p></div><div><h3>Is there parking?</h3><p>Yes, a free lot in front of the building, with two accessible spaces closest to the door.</p></div><div><h3>Public transportation</h3><p>The Route 9 bus stops at Pruett and Mill, about two minutes&rsquo; walk on a level sidewalk.</p></div><div><h3>Is there an elevator?</h3><p>Yes, to the second floor. Rooms 1 to 4 are on the first floor and Rooms 5 to 8 are on the second. If you can&rsquo;t use stairs and the elevator is out, your therapist will move to a first-floor room.</p></div><div><h3>How wide are the doors?</h3><p>Every consulting room door is at least 34 inches wide.</p></div><div><h3>Is there an accessible restroom?</h3><p>Yes, one on each floor, with grab rails and a turning space.</p></div></div><figure class="photo"><img src="assets/img/car-park-1400.webp" srcset="assets/img/car-park-800.webp 800w, assets/img/car-park-1400.webp 1400w" sizes="(min-width: 900px) 26vw, 100vw" alt="A low dark-sided building with a glass door, seen across its parking lot on an overcast day" width="1400" height="788" loading="lazy"><figcaption>The building, seen from the parking lot.</figcaption></figure></div></div></div></section><section class="sec"><div class="wrap ledger"><h2>Waiting</h2><div><div class="pairs two"><div><h3>Is there a quiet waiting space?</h3><p>Yes. There is a small room beside the main waiting room with one chair, so you don&rsquo;t have to sit facing other people. Ask for it when you book.</p></div><div><h3>Can I wait outside or in my car and be called?</h3><p>Yes. Text the office when you arrive, and your therapist will call or text you when they&rsquo;re ready.</p></div><div><h3>Who should I call ahead?</h3><p>The intake coordinator, on <a href="tel:+16105550147">(610) 555-0147</a>, Monday to Friday, 9 a.m. to 5 p.m. You don&rsquo;t need to give a reason.</p></div><div><h3>Can I bring someone?</h3><p>Yes. They can wait in the waiting room, or sit in on the session if you and your therapist agree.</p></div></div></div></div></section><section class="sec"><div class="wrap ledger"><h2>This website</h2><div><p>We have tried to build this site so that it works with a keyboard and a screen reader, at 200% zoom, and without JavaScript. If something doesn&rsquo;t work for you, please tell the intake coordinator.</p></div></div></section><div class="wrap" style="padding-top:36px;padding-bottom:36px;max-width:820px"><figure class="photo"><img src="assets/img/stairs-1200.webp" srcset="assets/img/stairs-700.webp 700w, assets/img/stairs-1200.webp 1200w" sizes="(min-width: 820px) 760px, 100vw" alt="A stone staircase with a black handrail and plain white walls" width="1200" height="800" loading="lazy"><figcaption>The stairs to the second floor.</figcaption></figure></div>
 </main>
-<footer class="site-footer">
+<section class="help-foot" aria-labelledby="help-foot-h">
   <div class="wrap">
-    <p class="foot-big">Whenever you&rsquo;re ready,<br><a href="contact.html">we&rsquo;re here to listen.</a></p>
+    <h2 id="help-foot-h">If you need help now</h2>
+    <p>Call or text <a href="tel:988">988</a> at any hour. If you or someone else is in immediate danger, call <a href="tel:911">911</a>. Haverlock doesn&rsquo;t provide emergency or after-hours care. <a href="crisis.html">What to do if you need help now</a></p>
+  </div>
+</section>
+<footer class="foot">
+  <div class="wrap">
     <div class="foot-grid">
-      <div class="foot-brand">
-        <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8z" fill="currentColor" opacity=".22"/><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8zM12 8v13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Haverlock Therapy Group</span></a>
-        <p>Individual, couples and group therapy for adults, in person and online. A fictional practice, built as a demonstration website.</p>
+      <div>
+        <h2>Haverlock Therapy Group</h2>
+        <address>214 Pruett Street<br>Carrow Mills, Pennsylvania<br><a href="tel:+16105550147">(610) 555-0147</a><br><a href="mailto:intake@haverlocktherapy.com">intake@haverlocktherapy.com</a></address>
+        <p>The intake coordinator answers the phone Monday to Friday, 9 a.m. to 5 p.m., and replies to messages within one working day.</p>
       </div>
       <div>
-        <h2>Visit</h2>
-        <p>48 Haverlock Street, Suite 2<br>Anytown, ST 00000</p>
-        <p class="muted small">Mon&ndash;Thu 8am&ndash;8pm<br>Fri 8am&ndash;4pm &middot; Sat by arrangement</p>
-      </div>
-      <div>
-        <h2>Contact</h2>
+        <h2>Pages</h2>
         <ul>
-          <li><a href="tel:+15555550142">(555) 555-0142</a></li>
-          <li><a href="mailto:hello@haverlock.example">hello@haverlock.example</a></li>
-          <li><a href="contact.html">Request an appointment</a></li>
+          <li><a href="find-a-therapist.html">Find a therapist</a></li>
+          <li><a href="services.html">What we offer</a></li>
+          <li><a href="first-appointment.html">First appointment</a></li>
+          <li><a href="crisis.html">If you need help now</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h2>Explore</h2>
+        <h2>Money</h2>
+        <ul><li><a href="fees-and-insurance.html">Fees, insurance and the sliding scale</a></li></ul>
+        <p>We take cards, HSA and FSA cards, and checks. Cancel with 24 hours&rsquo; notice and there is no charge.</p>
+      </div>
+      <div>
+        <h2>Legal</h2>
         <ul>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="find-a-therapist.html">Find a therapist</a></li>
-          <li><a href="fees-and-insurance.html">Fees &amp; insurance</a></li>
-          <li><a href="first-appointment.html">Your first appointment</a></li>
-          <li><a href="crisis.html">If you need help now</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="privacy.html#notice">Notice of Privacy Practices</a></li>
         </ul>
       </div>
     </div>
-    <p class="foot-crisis">We are not an emergency service and messages are read during office hours. If you&rsquo;re in crisis, <a href="tel:988">call</a> or <a href="sms:988">text 988</a>, or call <a href="tel:911">911</a> in an emergency.</p>
-    <div class="foot-legal">
-      <p>&copy; <span data-year>2026</span> Haverlock Therapy Group &middot; Fictional demo practice</p>
-      <p><a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a> &nbsp;&middot;&nbsp; <a href="accessibility.html">Accessibility</a></p>
+    <div class="foot-strip">
+      <p>Our clinicians are licensed in Pennsylvania as psychologists, social workers (LCSW), marriage and family therapists (LMFT) and professional counselors (LPC). Each person&rsquo;s license and the states where they can see virtual clients are listed with their entry. We can&rsquo;t tell you what your plan covers.</p>
+      <p>&copy; <span data-year>2026</span> Haverlock Therapy Group</p>
     </div>
   </div>
 </footer>
-<p class="demo-marker"><b>DEMO</b> &mdash; ThinkFirst Studios &middot; [Your name here]</p>
-<script src="script.js?v=20261104b" defer></script>
 </body>
 </html>

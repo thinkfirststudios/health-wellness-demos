@@ -1,127 +1,80 @@
 <!DOCTYPE html>
+<!-- Kilnwood Aesthetics Clinic is a fictional business, built by ThinkFirst Studios as a sales asset. -->
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Contact — Kilnwood Aesthetics Clinic</title>
-<meta name="description" content="Contact Kilnwood Aesthetics Clinic: address, phone, email, opening hours and directions.">
+<title>Contact | Kilnwood Aesthetics Clinic</title>
+<meta name="description" content="Address, phone, opening hours and a short contact form for Kilnwood Aesthetics Clinic.">
 <meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#1e1e1e">
-<link rel="preload" href="assets/fonts/abril-fatface-400.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/libre-baskerville-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=20261104b">
-<script>document.documentElement.classList.add('js')</script>
+<meta name="theme-color" content="#242029">
+<link rel="stylesheet" href="styles.css?v=20261106a">
 </head>
 <body>
 <a class="skip" href="#main">Skip to content</a>
-<header class="site-header">
-  <div class="hdr">
-    <span class="lang" title="This site is in English"><span aria-hidden="true">ENG</span><span class="sr-only">Language: English</span></span>
-    <a class="emblem" href="index.html" aria-label="Kilnwood Aesthetics Clinic, home"><svg viewBox="0 0 54 46" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M27 6c-6 6-8 13-8 20 0 6 3 11 8 14 5-3 8-8 8-14 0-7-2-14-8-20Z"/><path d="M19 22c-6-3-12-3-16-1 1 9 7 16 15 18 3 1 6 1 9 1"/><path d="M35 22c6-3 12-3 16-1-1 9-7 16-15 18-3 1-6 1-9 1"/><path d="M27 16v24"/><path d="M12 43h30"/></svg></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav"><span class="bars" aria-hidden="true"></span>Menu</button>
-    <nav class="nav" id="site-nav" aria-label="Main">
-      <ul class="nav-l"><li><a href="about.html">About</a></li><li><a href="treatments.html">Treatments</a></li><li><a href="downtime.html">Aftercare</a></li></ul>
-      <ul class="nav-r"><li><a href="pricing.html">Pricing</a></li><li><a href="consultation.html">Consultation</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul>
-    </nav>
+<header class="head">
+  <div class="head-in">
+    <nav class="nav-side nav-side--l" aria-label="Treatments and prices"><a class="nav-link" href="treatments.html">Treatments</a><a class="nav-link" href="downtime.html">Recovery</a><a class="nav-link" href="pricing.html">Pricing</a><a class="btn btn--line head-call head-call--wide" href="tel:+16035550142">Call (603) 555-0142</a></nav>
+    <a class="brand" href="index.html" aria-label="Kilnwood Aesthetics Clinic, home">Kilnwood<small>Aesthetics Clinic</small></a>
+    <div class="head-actions">
+      <nav class="nav-side nav-side--r" aria-label="Consultation and practice"><a class="nav-link" href="consultation.html">Consultation</a><a class="nav-link" href="accessibility.html">Accessibility</a><a class="nav-link" href="about.html">About</a><a class="btn btn--primary" href="consultation.html">Book a consultation</a></nav>
+      <a class="btn btn--line head-call narrow-only" href="tel:+16035550142">Call (603) 555-0142</a>
+      <a class="btn btn--primary head-book narrow-only" href="consultation.html">Book a consultation</a>
+      <button class="menu-btn" type="button" data-menu-open aria-expanded="false" aria-controls="menu">Menu</button>
+    </div>
   </div>
 </header>
+<div class="menu" id="menu" hidden role="dialog" aria-modal="true" aria-label="Site menu">
+  <div class="menu-top"><a class="brand" href="index.html">Kilnwood<small>Aesthetics Clinic</small></a><button class="menu-btn" style="display:block" type="button" data-menu-close>Close</button></div>
+  <nav aria-label="All pages"><ul><li><a href="treatments.html">Treatments</a></li><li><a href="downtime.html">Recovery</a></li><li><a href="pricing.html">Pricing</a></li><li><a href="consultation.html">Consultation</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" aria-current="page">Contact</a></li></ul></nav>
+  <div class="btn-row"><a class="btn btn--primary" href="consultation.html">Book a consultation</a><a class="btn btn--line" href="tel:+16035550142">Call (603) 555-0142</a></div>
+</div>
 <main id="main">
-<section class="page-hero" aria-labelledby="h1">
-  <img src="assets/img/band-stillroom-2000.webp" srcset="assets/img/band-stillroom-800.webp 800w, assets/img/band-stillroom-1400.webp 1400w, assets/img/band-stillroom-2000.webp 2000w" sizes="100vw" width="2000" height="1000" alt="" fetchpriority="high" decoding="async" style="object-position:50% 55%">
-  <div class="wrap">
-    <h1 id="h1">Contact</h1>
-    <p class="script">We reply within one working day</p>
-    
-  </div>
-</section>
-
-<section class="section" aria-label="Contact details and message form">
-  <div class="wrap">
-    <div class="contact-grid">
-    <div>
-      <h2 id="ct-h" style="font-size:clamp(1.6rem,3.2vw,2rem)">Find the clinic</h2>
-      <dl class="dl">
-        <div><dt>Address</dt><dd>214 Sample Street, Suite 3, Anytown, ST 00000</dd></div>
-        <div><dt>Phone</dt><dd><a href="tel:+1-555-0148-2210">(555) 0148-2210</a></dd></div>
-        <div><dt>Email</dt><dd><a href="mailto:hello@kilnwood.example">hello@kilnwood.example</a></dd></div>
-        <div><dt>Parking</dt><dd>Free two-hour parking behind the building; step-free entrance on the side path.</dd></div>
-      </dl>
-      <h3 style="margin-top:26px">Opening hours</h3>
-      <ul class="hours">
-        <li><span>Monday</span><span>Closed</span></li>
-        <li><span>Tuesday – Thursday</span><span>9am – 7pm</span></li>
-        <li><span>Friday</span><span>9am – 6pm</span></li>
-        <li><span>Saturday</span><span>9am – 4pm</span></li>
-        <li><span>Sunday</span><span>Closed</span></li>
-      </ul>
-    </div>
-    <div class="form-panel">
-      <h3>Send a message</h3>
-      <form data-demo-form novalidate>
-        <div class="form-row">
-          <div><label for="ct-h-name">Your name</label><input id="ct-h-name" name="name" autocomplete="name" required></div>
-          <div><label for="ct-h-email">Email</label><input id="ct-h-email" name="email" type="email" autocomplete="email" required></div>
-        </div>
-        <div><label for="ct-h-msg">Message <span class="hint">Questions about treatments, prices or times. Please do not include medical details; we cover those in person.</span></label><textarea id="ct-h-msg" name="message" required></textarea></div>
-        <div><button class="btn btn-line" type="submit">Send message</button></div>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </div>
-  </div>
-  </div>
-</section>
-
-<section class="section section-alt" aria-labelledby="dir-h">
-  <div class="wrap">
-    <div class="title-lines"><h2 id="dir-h">Getting here</h2><p class="sub">Directions in words, no map embed</p></div>
-    <div class="cards">
-      <div class="card"><h3>By car</h3><p>Turn onto Sample Street from the main road; the clinic is the third building on the left. Free two-hour parking is behind the building.</p></div>
-      <div class="card line"><h3>By bus</h3><p>Routes 4 and 12 stop at Sample Street, about two minutes' walk away on level pavement.</p></div>
-      <div class="card"><h3>Arriving</h3><p>The step-free entrance is on the side path. Reception is on the ground floor, and all treatment rooms are on one level.</p></div>
-    </div>
-    <p class="center" style="margin-top:30px"><a class="btn btn-line" href="accessibility.html">Accessibility details</a></p>
-  </div>
-</section>
+<section class="page-head"><div class="wrap page-head-in has-photo"><div><p class="eyebrow">Contact</p><h1>Reach the front desk</h1><p class="lede">Call during opening hours, or leave your details and we will come back to you within one working day.</p></div><div><img src="assets/img/building-800.webp" srcset="assets/img/building-800.webp 800w, assets/img/building-1400.webp 1400w, assets/img/building-2000.webp 2000w" sizes="(min-width:1024px) 45vw, 100vw" width="2000" height="1125" alt="The upper floors of the building at dusk, with a few windows lit." fetchpriority="high"></div></div></section>
+<aside class="licence" aria-label="Who is responsible for care here"><div class="wrap"><ul>
+<li><b>Medical director:</b> a physician, on site every Tuesday and Thursday and on call on every other treatment day.</li>
+<li><b>Practitioners:</b> a nurse practitioner, registered nurses and a licensed aesthetician. Every current state license hangs at reception.</li>
+<li><b>Who does what:</b> set out against every treatment in the <a href="treatments.html">treatment table</a>.</li>
+</ul></div></aside>
+<section class="band"><div class="wrap split">
+  <div><h2 style="margin-bottom:16px">Find us</h2>
+    <address style="margin-bottom:20px">Kilnwood Aesthetics Clinic<br>38 Tannery Row<br>Ellery Mills<br><a href="tel:+16035550142">(603) 555-0142</a><br><a href="mailto:hello@kilnwoodclinic.example">hello@kilnwoodclinic.example</a></address>
+    <p>We are on the ground floor, with the street door on Tannery Row and parking in the rear lot.</p>
+    <table class="plain-tbl"><caption class="eyebrow" style="text-align:left">Opening hours</caption><tbody><tr><th scope="row">Monday</th><td>Closed</td></tr><tr><th scope="row">Tuesday</th><td>10:00am to 6:00pm</td></tr><tr><th scope="row">Wednesday</th><td>10:00am to 6:00pm</td></tr><tr><th scope="row">Thursday</th><td>12:00pm to 8:30pm</td></tr><tr><th scope="row">Friday</th><td>10:00am to 6:00pm</td></tr><tr><th scope="row">Saturday</th><td>9:00am to 2:00pm</td></tr><tr><th scope="row">Sunday</th><td>Closed</td></tr></tbody></table>
+    <p style="margin-top:16px">Evening appointments are on Thursdays, with the last one at 7:00pm.</p></div>
+  <div><h2 style="margin-bottom:16px">Leave your details</h2><form class="form" data-form>
+  <p class="form-note">Please keep health details out of this form. It asks only how to reach you, and everything about your health waits for the appointment, in the room.</p>
+  <div class="form-grid">
+  <div class="field"><label for="contact-name">Your name</label><input id="contact-name" name="name" type="text" autocomplete="name" required></div>
+  <div class="field"><label for="contact-reach">Phone or email</label><input id="contact-reach" name="reach" type="text" autocomplete="off" required></div>
+  <div class="field"><label for="contact-method">Preferred contact method</label><select id="contact-method" name="method"><option>Phone</option><option>Text</option><option>Email</option></select></div>
+  <div class="field"><label for="contact-cat">Treatment category of interest</label><select id="contact-cat" name="category"><option>Injectables</option><option>Energy and laser</option><option>Skin</option><option>Body</option><option>Not sure yet</option></select></div>
+</div>
+  <div class="btn-row"><button class="btn btn--primary" type="submit">Book a consultation</button></div>
+  <p class="form-status" role="status"></p>
+</form></div>
+</div></section>
 </main>
-<footer class="site-footer">
-  <div class="wrap">
-    <div class="ft-grid">
-      <div class="ft-brand">
-        <span class="fw">Kilnwood</span><span class="fs">Aesthetics Clinic</span>
-        <p style="margin-top:16px">Facials, skin treatments, injectables, laser and body treatments. Every treatment follows a consultation with a licensed practitioner.</p>
-      </div>
-      <div>
-        <h2>Visit</h2>
-        <p>214 Sample Street, Suite 3, Anytown, ST 00000<br><a href="tel:+1-555-0148-2210">(555) 0148-2210</a><br><a href="mailto:hello@kilnwood.example">hello@kilnwood.example</a></p>
-        <p>Tue–Thu 9am–7pm · Fri 9am–6pm<br>Sat 9am–4pm · Sun &amp; Mon closed</p>
-      </div>
-      <div>
-        <h2>Clinic</h2>
-        <ul>
-          <li><a href="treatments.html">Treatments</a></li>
-          <li><a href="pricing.html">Pricing &amp; packages</a></li>
-          <li><a href="downtime.html">Recovery &amp; aftercare</a></li>
-          <li><a href="consultation.html">Book a consultation</a></li>
-          <li><a href="about.html">About the clinic</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </div>
-      <div>
-        <h2>Information</h2>
-        <ul>
-          <li><a href="accessibility.html">Accessibility</a></li>
-          <li><a href="privacy.html">Privacy notice</a></li>
-          <li><a href="terms.html">Terms of use</a></li>
-        </ul>
-      </div>
+<footer class="foot"><div class="wrap">
+  <div class="foot-cols">
+    <div>
+      <a class="brand" href="index.html">Kilnwood<small>Aesthetics Clinic</small></a>
+      <address>38 Tannery Row<br>Ellery Mills<br><a href="tel:+16035550142">(603) 555-0142</a><br><a href="mailto:hello@kilnwoodclinic.example">hello@kilnwoodclinic.example</a></address>
     </div>
-    <div class="ft-base">
-      <p style="margin:0">© <span data-year>2026</span> Kilnwood Aesthetics Clinic — a fictional business. Names, prices, reviews and contact details on this site are sample content for a website demo.</p>
-      <p style="margin:0">Treatment suitability is decided at an in-person consultation. Individual results vary.</p>
-    </div>
+    <nav aria-label="Footer pages"><h2>The practice</h2><ul>
+      <li><a href="treatments.html">Treatments</a></li><li><a href="downtime.html">Recovery</a></li>
+      <li><a href="consultation.html">Consultation</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul></nav>
+    <div><h2>Money</h2><ul><li><a href="pricing.html">Prices</a></li><li><a href="pricing.html#packages">Packages and membership</a></li></ul>
+      <p>Credit cards, debit cards and cash. We do not bill insurance and we do not offer finance.</p></div>
+    <nav aria-label="Legal pages"><h2>Legal</h2><ul><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li><li><a href="accessibility.html">Accessibility</a></li></ul></nav>
   </div>
-</footer>
-<p class="demo-marker">DEMO — ThinkFirst Studios · [Your name here]</p>
-<script src="script.js?v=20261104b" defer></script>
+  <div class="foot-strip">
+    <p>The medical director is a physician. Practitioner licenses hang at reception and are available from the desk on request.</p>
+    <p>Products and devices are described by what they are. Results and recovery vary from person to person.</p>
+    <p>&copy; <span data-year></span> Kilnwood Aesthetics Clinic</p>
+  </div>
+</div></footer>
+<div class="sticky"><a class="btn btn--primary" href="consultation.html">Book a consultation</a><a class="btn btn--line" href="tel:+16035550142">Call (603) 555-0142</a></div>
+<script src="script.js?v=20261106a" defer></script>
 </body>
 </html>

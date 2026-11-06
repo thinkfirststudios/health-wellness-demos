@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book | Braeburn Family Medicine</title>
+<meta name="description" content="Ask to book with a named Braeburn provider. The front desk calls you back within one working day.">
+<meta property="og:title" content="Book | Braeburn Family Medicine">
+<meta property="og:description" content="Ask to book with a named Braeburn provider. The front desk calls you back within one working day.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#F6EFC7">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23962233'/%3E%3C/svg%3E">
+<link rel="preload" href="assets/fonts/hepta-slab-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="assets/fonts/mada-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=20261106a">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "Physician", "name": "Braeburn Family Medicine", "telephone": "+1-555-555-0142", "address": {"@type": "PostalAddress", "streetAddress": "214 Candler Street, Suite 2"}, "openingHours": ["Mo-Th 08:00-17:30", "Fr 08:00-16:00", "Sa 09:00-12:00"]}</script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="utility on-dark"><div class="wrap">
+<a class="tel" href="tel:+15555550142">(555) 555-0142</a>
+<span class="hours-today" data-hours-today>Mon–Thu 8:00 am–5:30 pm</span>
+<a class="push" href="accessibility.html">Accessibility</a>
+<a href="new-patients.html#portal">Patient portal</a>
+</div></div>
+<header class="head"><div class="wrap">
+<a class="brand" href="index.html" aria-label="Braeburn Family Medicine, home">Braeburn<span class="brand-rest"> Family Medicine</span><small>Primary care for adults and families</small></a>
+<button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu <svg viewBox="0 0 12 8" aria-hidden="true" focusable="false"><path d="M1 1l5 5 5-5" fill="none" stroke="currentColor" stroke-width="2"/></svg></button>
+<nav class="nav" id="nav" aria-label="Main"><ul><li><a href="providers.html">Providers</a></li><li><a href="care.html">Care</a></li><li><a href="insurance-and-fees.html">Insurance &amp; fees</a></li><li><a href="new-patients.html">New patients</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li class="nav-book"><a href="book.html" aria-current="page">Book</a></li></ul></nav>
+<a class="tel head-tel" href="tel:+15555550142">(555) 555-0142</a>
+<a class="btn btn--primary btn--book" href="book.html">Book</a>
+</div></header>
+<main id="main">
+<section class="pagehead ruled"><div class="wrap">
+<h1>Book an appointment</h1><p class="lede">Name the person you would like to see, and the front desk will call you back.</p>
+<section class="strip" aria-label="Who is accepting new patients"><div class="strip-head"><span>Panel status checked 4 November</span><a class="tel" href="tel:+15555550142">(555) 555-0142</a></div><ul class="strip-rows"><li class="strip-row"><a class="strip-name" href="providers.html#okonjo">Dr Adaeze Okonjo, MD</a><span class="strip-state state-open">Accepting new patients</span><span class="strip-next"><span class="sr">Next available: </span>Week of the 18th</span></li><li class="strip-row"><a class="strip-name" href="providers.html#hollis">Dr Martin Hollis, MD</a><span class="strip-state state-closed">Panel closed — waitlist open</span><span class="strip-next">Waitlist open</span></li><li class="strip-row"><a class="strip-name" href="providers.html#raman">Priya Raman, FNP</a><span class="strip-state state-open">Accepting new patients</span><span class="strip-next"><span class="sr">Next available: </span>This week</span></li><li class="strip-row"><a class="strip-name" href="providers.html#vlcek">Dr Tomas Vlček, DO</a><span class="strip-state state-open">Accepting new patients — children only</span><span class="strip-next"><span class="sr">Next available: </span>Week of the 11th</span></li></ul></section>
+</div></section>
+<section class="band"><div class="wrap ledger">
+<div class="ledger-side"><span class="eyebrow">Your request</span><h2>Tell us who, and how to reach you</h2><p>This is a request, not a confirmed booking. The front desk calls you back within one working day to arrange a time.</p></div>
+<div>
+<form class="form" id="book-form" method="post" action="book.html" novalidate>
+<div class="chosen" id="chosen" hidden><p class="status status--open"></p><div class="chosen-body"><p class="chosen-name"></p><p data-next></p><p class="checked">Status checked 4 November</p></div></div>
+<p class="warn">Please don't describe symptoms or medical history here. This form isn't a secure medical channel. We'll call you and take the details properly.</p>
+<div class="field"><label for="f-name">Your name</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="err-name"><p class="err" id="err-name" role="alert"></p></div>
+<fieldset class="field"><legend>How should we reach you?</legend><div class="choice">
+<label><input type="radio" name="how" value="call" checked> Phone call</label>
+<label><input type="radio" name="how" value="text"> Text message</label>
+<label><input type="radio" name="how" value="email"> Email</label></div></fieldset>
+<div class="field"><label for="f-contact" id="contact-label">Your phone number or email</label><input id="f-contact" name="contact" type="text" required aria-describedby="err-contact"><p class="err" id="err-contact" role="alert"></p></div>
+<div class="field"><label for="f-provider">Which provider?</label><select id="f-provider" name="provider">
+<option value="">Whoever is free first</option><option value="okonjo">Dr Adaeze Okonjo, MD</option><option value="hollis">Dr Martin Hollis, MD</option><option value="raman">Priya Raman, FNP</option><option value="vlcek">Dr Tomas Vlček, DO</option></select></div>
+<fieldset class="field"><legend>In person or video?</legend><div class="choice">
+<label><input id="mode-person" type="radio" name="mode" value="person" checked> In person</label>
+<label><input id="mode-video" type="radio" name="mode" value="video"> Video</label></div><p class="hint" id="mode-hint">Video visits are for patients who are in this state at the time of the appointment.</p></fieldset>
+<div class="field"><label for="f-about">What is this about?</label><select id="f-about" name="about" required aria-describedby="err-about">
+<option value="">Please choose</option><option>New patient</option><option>Existing patient</option><option>Insurance or billing question</option><option>Records request</option><option>Something else</option></select><p class="err" id="err-about" role="alert"></p></div>
+<button class="btn btn--primary" type="submit">Send to the front desk</button>
+</form>
+<p class="sent" id="sent" tabindex="-1" role="status" hidden></p>
+</div>
+</div></section>
+<section class="closing" aria-label="Roster and phone"><div class="wrap">
+<section class="strip" aria-label="Who is accepting new patients"><div class="strip-head"><span>Panel status checked 4 November</span><a class="tel" href="tel:+15555550142">(555) 555-0142</a></div><ul class="strip-rows"><li class="strip-row"><a class="strip-name" href="providers.html#okonjo">Dr Adaeze Okonjo, MD</a><span class="strip-state state-open">Accepting new patients</span><span class="strip-next"><span class="sr">Next available: </span>Week of the 18th</span></li><li class="strip-row"><a class="strip-name" href="providers.html#hollis">Dr Martin Hollis, MD</a><span class="strip-state state-closed">Panel closed — waitlist open</span><span class="strip-next">Waitlist open</span></li><li class="strip-row"><a class="strip-name" href="providers.html#raman">Priya Raman, FNP</a><span class="strip-state state-open">Accepting new patients</span><span class="strip-next"><span class="sr">Next available: </span>This week</span></li><li class="strip-row"><a class="strip-name" href="providers.html#vlcek">Dr Tomas Vlček, DO</a><span class="strip-state state-open">Accepting new patients — children only</span><span class="strip-next"><span class="sr">Next available: </span>Week of the 11th</span></li></ul></section>
+<p class="callrow"><span>Rather talk to someone?</span><a class="tel" href="tel:+15555550142">(555) 555-0142</a></p>
+</div></section>
+<section class="booking on-dark"><div class="wrap">
+<h2>Choose your provider and book.</h2>
+<p>You will see who you pick. The front desk calls you back within one working day.</p>
+<div class="btnrow"><a class="btn btn--primary" href="book.html?provider=okonjo">Book with Dr Okonjo</a><a class="btn btn--outline" href="book.html?provider=hollis">Join Dr Hollis's waitlist</a><a class="btn btn--primary" href="book.html?provider=raman">Book with Priya Raman</a><a class="btn btn--primary" href="book.html?provider=vlcek">Book with Dr Vlček</a></div>
+<a class="tel" href="tel:+15555550142">(555) 555-0142</a>
+</div></section>
+</main>
+<footer class="foot"><div class="wrap">
+<div class="foot-grid">
+<div><h2>Find us</h2><p>214 Candler Street, Suite 2</p><a class="tel" href="tel:+15555550142">(555) 555-0142</a>
+<p>Monday–Thursday 8:00 am–5:30 pm<br>Friday 8:00 am–4:00 pm<br>Saturday 9:00 am–12:00 pm<br>Sunday closed</p></div>
+<div><h2>Panel status checked 4 November</h2><ul class="foot-strip"><li><strong>Dr Adaeze Okonjo, MD</strong>Accepting new patients · next available week of the 18th</li><li><strong>Dr Martin Hollis, MD</strong>Panel closed — waitlist open</li><li><strong>Priya Raman, FNP</strong>Accepting new patients · next available this week</li><li><strong>Dr Tomas Vlček, DO</strong>Accepting new patients — children only · next available week of the 11th</li></ul></div>
+<div><h2>The practice</h2><ul class="foot-list"><li><a href="providers.html">Providers</a></li><li><a href="care.html">Care</a></li><li><a href="insurance-and-fees.html">Insurance &amp; fees</a></li><li><a href="new-patients.html">New patients</a></li></ul></div>
+<div><h2>More</h2><ul class="foot-list"><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="privacy.html">Privacy</a></li><li><a href="terms.html">Terms</a></li></ul></div>
+</div>
+<p class="foot-base">© <span data-year></span> Braeburn Family Medicine. Every provider here is licensed to practise in this state.</p>
+</div></footer>
+<div class="dock" id="dock"><a class="btn btn--primary" href="providers.html">See who's accepting patients</a><a class="btn btn--outline" href="tel:+15555550142">Call 214 Candler Street</a></div>
+<script src="script.js?v=20261106a"></script>
+</body>
+</html>

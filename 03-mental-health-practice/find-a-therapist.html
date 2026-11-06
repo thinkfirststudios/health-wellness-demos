@@ -1,175 +1,254 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Find a therapist — Haverlock Therapy Group</title>
-<meta name="description" content="Fictional demo. Filter the practice's therapists by what they work with, type of therapy, in person or online, insurance, sliding scale and availability.">
-<meta name="robots" content="noindex, nofollow">
-<meta name="theme-color" content="#121212">
-<meta property="og:title" content="Find a therapist — Haverlock Therapy Group">
-<meta property="og:description" content="Fictional demo. Filter the practice's therapists by what they work with, type of therapy, in person or online, insurance, sliding scale and availability.">
-<meta property="og:type" content="website">
-<link rel="preload" href="assets/fonts/playfair-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="preload" href="assets/fonts/inter-var.woff2" as="font" type="font/woff2" crossorigin>
-<link rel="stylesheet" href="styles.css?v=20261104b">
+<title>Find a therapist | Haverlock Therapy Group</title>
+<meta name="description" content="Every clinician at Haverlock, with what they work with, insurance, sliding scale, hours, evenings, in person or virtual, and states licensed.">
+<link rel="icon" href="data:,">
+<link rel="preload" href="assets/fonts/oxygen-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="styles.css?v=20261106a">
+<script>document.documentElement.className='js';</script>
+<script src="script.js?v=20261106a" defer></script>
 </head>
 <body>
-<aside class="crisis-strip" aria-label="Crisis support">
-  <div class="wrap">
-    <p><span class="crisis-dot" aria-hidden="true"></span>If you&rsquo;re in crisis or thinking about suicide, <a href="tel:988">call</a> or <a href="sms:988">text 988</a> (Suicide &amp; Crisis Lifeline). In an emergency, call <a href="tel:911">911</a>.</p>
-    <a class="more" href="crisis.html">More crisis support &rarr;</a>
-  </div>
-</aside>
-<a class="skip-link" href="#main">Skip to main content</a>
+<a class="skip" href="#main">Skip to main content</a>
 <header class="site-header">
-  <div class="wrap header-inner">
-    <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8z" fill="currentColor" opacity=".22"/><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8zM12 8v13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Haverlock</span><span class="visually-hidden"> Therapy Group, home</span></a>
-    <nav id="site-nav" class="site-nav" aria-label="Primary">
-      <button type="button" class="menu-close" hidden>Close menu</button>
-      <ul>
-        <li class="nav-help"><a href="crisis.html">If you need help now</a></li><li><a href="about.html">About us</a></li><li><a href="services.html">Services</a></li><li><a href="find-a-therapist.html" aria-current="page">Find a therapist</a></li><li class="nav-extra"><a href="fees-and-insurance.html">Fees &amp; insurance</a></li><li class="nav-extra"><a href="first-appointment.html">First appointment</a></li><li class="nav-extra"><a href="contact.html">Contact</a></li>
-      </ul>
+  <div class="bar">
+    <a class="brand" href="index.html">Haverlock<br> Therapy Group</a>
+    <a class="help" href="crisis.html">If you need help now</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav" hidden>Menu</button>
+    <nav class="nav" id="nav" aria-label="Primary">
+      <ul><li class="nav-help"><a href="crisis.html">If you need help now</a></li><li><a href="find-a-therapist.html" aria-current="page">Find a therapist</a></li><li><a href="fees-and-insurance.html">Fees &amp; insurance</a></li><li><a href="services.html">What we offer</a></li><li><a href="first-appointment.html">First appointment</a></li><li><a href="accessibility.html">Accessibility</a></li><li><a href="about.html">About</a></li></ul>
     </nav>
-    <a class="btn-ghost header-cta" href="contact.html">Request an appointment</a>
-    <button type="button" class="menu-toggle" aria-expanded="false" aria-controls="site-nav" hidden><span class="bars" aria-hidden="true"></span>Menu</button>
+    <a class="call" href="tel:+16105550147">Call (610) 555-0147</a>
   </div>
 </header>
-<main id="main" tabindex="-1">
-<section class="page-head">
-  <div class="rings" aria-hidden="true"><span></span><span></span><span></span></div>
+<div class="subbar"><a href="find-a-therapist.html">Find a therapist</a><a href="tel:+16105550147">Call (610) 555-0147</a></div>
+<main id="main">
+<div class="page-head"><div class="wrap"><h1>Find a therapist</h1><p>This is everyone at the practice, with what each person has published about their work. We list people by consulting room so that you can choose on hours, cost and how someone works. You get a name when your first appointment is confirmed.</p></div></div><aside class="license" aria-label="Licenses">
+  <div class="wrap"><p>Our clinicians hold Pennsylvania licenses, and the license type differs by person. Each entry on <a href="find-a-therapist.html">Find a therapist</a> shows that person&rsquo;s license and the states where they can see virtual clients. Intake can give you any clinician&rsquo;s license number on request.</p></div>
+</aside><section class="fit ruled" data-fit id="the-fit" aria-label="The list of clinicians">
   <div class="wrap">
-    <p class="pill">Our therapists</p>
-    <h1>Find the <span class="accent">right</span> therapist</h1>
-    <p class="lead">Six licensed therapists with different specialisms and styles. Narrow the list by what you&rsquo;d like help with, how you&rsquo;d like to meet and how you&rsquo;re paying. If you&rsquo;re not sure, our intake coordinator can suggest someone.</p>
-  </div>
-</section>
-
-<section class="section tight" aria-label="Therapist list">
-  <div class="wrap">
-    <div class="fit" data-fit>
+    
+    <div class="fit-panel">
       <div class="fit-filters">
-        <h2>Narrow it down</h2>
-        <p class="nojs-note">All six therapists are listed. Filtering needs JavaScript; everything on this page can be read without it.</p>
-        <div class="fit-group" role="group" aria-labelledby="fg-0"><p class="group-label" id="fg-0">What you&rsquo;d like help with</p><div class="chips"><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="anxiety">Anxiety</button><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="low-mood">Low mood</button><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="relationships">Relationships</button><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="grief">Grief &amp; loss</button><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="trauma">Trauma</button><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="burnout">Burnout &amp; work stress</button><button type="button" class="chip" aria-pressed="false" data-group="service" data-value="transitions">Life transitions</button></div></div><div class="fit-group" role="group" aria-labelledby="fg-1"><p class="group-label" id="fg-1">Type of therapy</p><div class="chips"><button type="button" class="chip" aria-pressed="false" data-group="type" data-value="individual">Individual</button><button type="button" class="chip" aria-pressed="false" data-group="type" data-value="couples">Couples</button><button type="button" class="chip" aria-pressed="false" data-group="type" data-value="group">Group</button></div></div><div class="fit-group" role="group" aria-labelledby="fg-2"><p class="group-label" id="fg-2">Where</p><div class="chips"><button type="button" class="chip" aria-pressed="false" data-group="fmt" data-value="inperson">In person</button><button type="button" class="chip" aria-pressed="false" data-group="fmt" data-value="online">Online</button></div></div><div class="fit-group" role="group" aria-labelledby="fg-3"><p class="group-label" id="fg-3">Paying</p><div class="chips"><button type="button" class="chip" aria-pressed="false" data-group="cost" data-value="insurance">Takes insurance</button><button type="button" class="chip" aria-pressed="false" data-group="cost" data-value="sliding">Sliding scale</button></div></div><div class="fit-group" role="group" aria-labelledby="fg-4"><p class="group-label" id="fg-4">Availability</p><div class="chips"><button type="button" class="chip" aria-pressed="false" data-group="avail" data-value="evenings">Evenings</button><button type="button" class="chip" aria-pressed="false" data-group="avail" data-value="new">Accepting new clients</button></div></div>
-        <div class="fit-tools"><p class="fit-count" aria-live="polite">6 of 6 therapists shown.</p><button type="button" class="fit-clear">Clear all</button></div>
-      </div>
-      <div>
-        <ul class="fit-list" role="list">
-          <li class="clinician" id="maren" data-clinician data-service="relationships transitions anxiety" data-type="individual couples" data-fmt="inperson online" data-cost="insurance" data-avail="evenings new">
-  <img src="assets/img/team-maren-400.webp" srcset="assets/img/team-maren-400.webp 400w, assets/img/team-maren-800.webp 800w" sizes="(min-width: 700px) 180px, (min-width: 480px) 112px, 92vw" width="400" height="500" alt="Portrait of a smiling woman with long dark hair in a black turtleneck, against a dark backdrop" loading="lazy" decoding="async">
-  <div>
-    <h3>Maren Ashcombe, LMFT</h3>
-    <p class="role">Couples &amp; relationships &middot; 9 years in practice</p>
-    <p>Maren works with couples who keep landing in the same argument, and with individuals working out what they want from a relationship. Sessions with her are practical and calm, with room for humour.</p>
-    <ul class="tags" aria-label="Works with"><li>Couples</li><li>Relationships</li><li>Life transitions</li><li>Anxiety</li></ul>
-    <ul class="facts"><li>In person &amp; online</li><li>Evenings Tue &amp; Thu</li><li>Accepting new clients</li></ul>
-    <a class="text-link" href="contact.html?clinician=maren#request-form">Request an appointment with Maren</a>
-  </div>
-</li><li class="clinician" id="imani" data-clinician data-service="anxiety burnout transitions" data-type="individual group" data-fmt="online inperson" data-cost="insurance sliding" data-avail="evenings new">
-  <img src="assets/img/team-imani-400.webp" srcset="assets/img/team-imani-400.webp 400w, assets/img/team-imani-800.webp 800w" sizes="(min-width: 700px) 180px, (min-width: 480px) 112px, 92vw" width="400" height="500" alt="Portrait of a smiling woman with short natural hair in a black top, against a dark backdrop" loading="lazy" decoding="async">
-  <div>
-    <h3>Imani Bellweather, LCSW</h3>
-    <p class="role">Anxiety, burnout &amp; identity &middot; 7 years in practice</p>
-    <p>Imani sees a lot of people who are high-functioning on paper and running on empty underneath. She co-leads the Thursday burnout group and has sliding-scale spaces most months.</p>
-    <ul class="tags" aria-label="Works with"><li>Anxiety</li><li>Burnout</li><li>Identity</li><li>Group facilitator</li></ul>
-    <ul class="facts"><li>Online &amp; in person</li><li>Evenings Mon&ndash;Wed</li><li>Sliding scale</li><li>Accepting new clients</li></ul>
-    <a class="text-link" href="contact.html?clinician=imani#request-form">Request an appointment with Imani</a>
-  </div>
-</li><li class="clinician" id="rafael" data-clinician data-service="low-mood burnout relationships" data-type="individual group" data-fmt="inperson" data-cost="sliding" data-avail="evenings">
-  <img src="assets/img/team-rafael-400.webp" srcset="assets/img/team-rafael-400.webp 400w, assets/img/team-rafael-800.webp 800w" sizes="(min-width: 700px) 180px, (min-width: 480px) 112px, 92vw" width="400" height="500" alt="Portrait of a young man in a black sweater, resting his chin on his hand, against a dark backdrop" loading="lazy" decoding="async">
-  <div>
-    <h3>Rafael Dunmore, LPC</h3>
-    <p class="role">Low mood &amp; men&rsquo;s group &middot; 6 years in practice</p>
-    <p>Rafael is direct, warm and unhurried. Many of his clients have never been to therapy before and aren&rsquo;t sure what to say yet; he is good at that first stretch. He runs the Tuesday men&rsquo;s group.</p>
-    <ul class="tags" aria-label="Works with"><li>Low mood</li><li>Work stress</li><li>Relationships</li><li>Men&rsquo;s group</li></ul>
-    <ul class="facts"><li>In person only</li><li>Evenings Mon &amp; Tue</li><li>Sliding scale</li><li>Waitlist for new clients</li></ul>
-    <a class="text-link" href="contact.html?clinician=rafael#request-form">Request an appointment with Rafael</a>
-  </div>
-</li><li class="clinician" id="devan" data-clinician data-service="trauma grief anxiety" data-type="individual" data-fmt="inperson online" data-cost="insurance" data-avail="new">
-  <img src="assets/img/team-devan-400.webp" srcset="assets/img/team-devan-400.webp 400w, assets/img/team-devan-800.webp 800w" sizes="(min-width: 700px) 180px, (min-width: 480px) 112px, 92vw" width="400" height="500" alt="Portrait of a bearded man in glasses and a white shirt, against a dark backdrop" loading="lazy" decoding="async">
-  <div>
-    <h3>Devan Sethuram, PsyD</h3>
-    <p class="role">Trauma &amp; grief &middot; 11 years in practice</p>
-    <p>Devan specialises in trauma-focused therapy and works at a pace the client sets. He&rsquo;s careful about explaining what each approach involves before you start, so nothing comes as a surprise.</p>
-    <ul class="tags" aria-label="Works with"><li>Trauma</li><li>Grief &amp; loss</li><li>Anxiety</li></ul>
-    <ul class="facts"><li>In person &amp; online</li><li>Daytime appointments</li><li>Accepting new clients</li></ul>
-    <a class="text-link" href="contact.html?clinician=devan#request-form">Request an appointment with Devan</a>
-  </div>
-</li><li class="clinician" id="owen" data-clinician data-service="grief transitions low-mood" data-type="individual group" data-fmt="inperson online" data-cost="insurance sliding" data-avail="new">
-  <img src="assets/img/team-owen-400.webp" srcset="assets/img/team-owen-400.webp 400w, assets/img/team-owen-800.webp 800w" sizes="(min-width: 700px) 180px, (min-width: 480px) 112px, 92vw" width="400" height="500" alt="Portrait of a smiling bald man in glasses looking to one side, against a dark backdrop" loading="lazy" decoding="async">
-  <div>
-    <h3>Owen Halloway, LCSW</h3>
-    <p class="role">Grief &amp; later-life transitions &middot; 18 years in practice</p>
-    <p>Owen has spent most of his career alongside people through bereavement, caregiving and big life changes. He leads the monthly bereavement group and is a steady, patient presence.</p>
-    <ul class="tags" aria-label="Works with"><li>Grief &amp; loss</li><li>Retirement &amp; later life</li><li>Low mood</li><li>Group facilitator</li></ul>
-    <ul class="facts"><li>In person &amp; online</li><li>Daytime appointments</li><li>Sliding scale</li><li>Accepting new clients</li></ul>
-    <a class="text-link" href="contact.html?clinician=owen#request-form">Request an appointment with Owen</a>
-  </div>
-</li><li class="clinician" id="ruth" data-clinician data-service="anxiety relationships transitions" data-type="individual couples" data-fmt="inperson" data-cost="insurance" data-avail="">
-  <img src="assets/img/team-ruth-400.webp" srcset="assets/img/team-ruth-400.webp 400w, assets/img/team-ruth-800.webp 800w" sizes="(min-width: 700px) 180px, (min-width: 480px) 112px, 92vw" width="400" height="500" alt="Portrait of a smiling older woman with silver hair in a cream turtleneck" loading="lazy" decoding="async">
-  <div>
-    <h3>Dr. Ruth Penhallow, PhD</h3>
-    <p class="role">Clinical director &middot; anxiety &amp; couples &middot; 24 years in practice</p>
-    <p>Ruth founded Haverlock and still keeps a small caseload alongside supervising the team. She works with anxiety and with couples at a crossroads, often later in a long relationship.</p>
-    <ul class="tags" aria-label="Works with"><li>Anxiety</li><li>Couples</li><li>Life transitions</li><li>Clinical supervision</li></ul>
-    <ul class="facts"><li>In person only</li><li>Daytime appointments</li><li>Waitlist for new clients</li></ul>
-    <a class="text-link" href="contact.html?clinician=ruth#request-form">Request an appointment with Ruth</a>
-  </div>
-</li>
-        </ul>
-        <div class="fit-empty" hidden>
-          <h3>No one matches every filter</h3>
-          <p>Try removing a filter or two. Or <a class="text-link" href="contact.html">send us a request</a> and our intake coordinator will suggest someone who fits, or point you to a trusted colleague outside the practice.</p>
-          <p class="small muted">If you need help right now, <a class="text-link" href="crisis.html">see crisis support</a>, call or text 988, or call 911 in an emergency.</p>
+        <h3>What would help you narrow this down?</h3>
+        <div class="fit-group" role="group" aria-label="What you&rsquo;re dealing with"><span class="fit-label">What you&rsquo;re dealing with</span><div class="chips"><button class="chip" type="button" aria-pressed="false" data-group="with" data-value="anxiety">Anxiety and worry</button><button class="chip" type="button" aria-pressed="false" data-group="with" data-value="mood">Low mood</button><button class="chip" type="button" aria-pressed="false" data-group="with" data-value="grief">Grief and loss</button><button class="chip" type="button" aria-pressed="false" data-group="with" data-value="trauma">Trauma</button><button class="chip" type="button" aria-pressed="false" data-group="with" data-value="couples">Couples and relationships</button><button class="chip" type="button" aria-pressed="false" data-group="with" data-value="teens">Teenagers, 13 to 17</button></div></div><div class="fit-group" role="group" aria-label="Insurance"><span class="fit-label">Insurance</span><div class="chips"><button class="chip" type="button" aria-pressed="false" data-group="ins" data-value="ardmoor">Ardmoor Health</button><button class="chip" type="button" aria-pressed="false" data-group="ins" data-value="penfield">Penfield Mutual</button><button class="chip" type="button" aria-pressed="false" data-group="ins" data-value="tessaly">Tessaly Care</button></div></div><div class="fit-group" role="group" aria-label="Cost"><span class="fit-label">Cost</span><div class="chips"><button class="chip" type="button" aria-pressed="false" data-group="scale" data-value="yes">Sliding scale available</button></div></div><div class="fit-group" role="group" aria-label="When you can come"><span class="fit-label">When you can come</span><div class="chips"><button class="chip" type="button" aria-pressed="false" data-group="when" data-value="day">Daytime</button><button class="chip" type="button" aria-pressed="false" data-group="when" data-value="evening">Evening</button><button class="chip" type="button" aria-pressed="false" data-group="when" data-value="weekend">Weekend</button></div></div><div class="fit-group" role="group" aria-label="How"><span class="fit-label">How</span><div class="chips"><button class="chip" type="button" aria-pressed="false" data-group="how" data-value="person">In person</button><button class="chip" type="button" aria-pressed="false" data-group="how" data-value="virtual">Virtual</button></div></div>
+        <div class="fit-status">
+          <p class="fit-count" aria-live="polite">8 of 8 clinicians match.</p>
+          <button class="clear" type="button">Clear all</button>
         </div>
-        <p class="team-note">Fictional team for this demo: names are invented and photographs are stock images of models.</p>
+      </div>
+      <p class="nojs-note">Here is the complete list. It can be filtered when JavaScript is on, and nothing on it is hidden when JavaScript is off.</p>
+    </div>
+    <p class="fit-note">Choosing two things in one group shows anyone who offers either. Nothing you select is saved or sent. Availability was last checked on November 2, 2026 by the intake coordinator.</p>
+    <div class="empty" hidden>
+      <h3>Nobody here fits what you&rsquo;ve selected</h3>
+      <p>That doesn&rsquo;t mean you can&rsquo;t be seen. Call the intake coordinator on <a href="tel:+16105550147">(610) 555-0147</a>. The coordinator keeps a list of therapists outside this practice, reviewed every three months, and will give you three names that fit what you need. You don&rsquo;t have to be a client here, and you don&rsquo;t have to explain why you&rsquo;re asking.</p>
+      <p>You can also <button class="clear clear-again" type="button">clear what you selected</button> and read the whole list.</p>
+      <div class="quiet-help">
+        <h3>If you need help now</h3>
+        <p>Call or text <a href="tel:988">988</a> at any hour. If you or someone else is in immediate danger, call <a href="tel:911">911</a>. <a href="crisis.html">What to do if you need help now</a></p>
       </div>
     </div>
+    <div class="fit-list">
+      <article class="entry" id="room-1" data-with="anxiety trauma" data-ins="ardmoor penfield" data-scale="yes" data-when="day evening" data-how="person virtual">
+  <h3>The therapist in Room 1</h3>
+  <p class="lic">Psychologist (PhD)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Anxiety and worry, Trauma</dd></div>
+    <div><dt>In their words</dt><dd>I ask a lot of questions in the first few weeks, and I&rsquo;ll tell you what I&rsquo;m thinking as we go. I give some work to do between sessions, and you can say no to it.</dd></div>
+    <div><dt>Methods offered</dt><dd>Cognitive behavioral therapy, EMDR</dd></div>
+    <div><dt>Insurance</dt><dd>Ardmoor Health, Penfield Mutual</dd></div>
+    <div><dt>Sliding scale</dt><dd>Yes</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Thursday, 10 a.m. to 8 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>Tuesday and Thursday until 8 p.m.</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 16</dd></div>
+    <div><dt>How</dt><dd>In person and virtual</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Pennsylvania, New Jersey</dd></div>
+    <div><dt>Languages</dt><dd>English</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=1">Request a first appointment with the therapist in Room 1</a>
+</article><article class="entry" id="room-2" data-with="grief mood" data-ins="ardmoor tessaly" data-scale="yes" data-when="day" data-how="person">
+  <h3>The therapist in Room 2</h3>
+  <p class="lic">Social worker (LCSW)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Grief and loss, Low mood</dd></div>
+    <div><dt>In their words</dt><dd>I talk less than people expect. Mostly I listen and ask about what you&rsquo;ve said. If silence is uncomfortable, tell me and I&rsquo;ll change how I work with you.</dd></div>
+    <div><dt>Methods offered</dt><dd>Psychodynamic therapy, narrative therapy</dd></div>
+    <div><dt>Insurance</dt><dd>Ardmoor Health, Tessaly Care</dd></div>
+    <div><dt>Sliding scale</dt><dd>Yes</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Wednesday, 9 a.m. to 4 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>None</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 9</dd></div>
+    <div><dt>How</dt><dd>In person</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Sees clients in person in Pennsylvania only</dd></div>
+    <div><dt>Languages</dt><dd>English, Spanish</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=2">Request a first appointment with the therapist in Room 2</a>
+</article><article class="entry" id="room-3" data-with="couples mood" data-ins="penfield" data-scale="no" data-when="evening weekend" data-how="person virtual">
+  <h3>The therapist in Room 3</h3>
+  <p class="lic">Marriage and family therapist (LMFT)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Couples and relationships, Low mood</dd></div>
+    <div><dt>In their words</dt><dd>With couples I&rsquo;m not there to decide who is right. I&rsquo;ll interrupt when the two of you go round the same loop, and I&rsquo;ll ask each of you about it directly.</dd></div>
+    <div><dt>Methods offered</dt><dd>Emotionally focused therapy, family systems therapy</dd></div>
+    <div><dt>Insurance</dt><dd>Penfield Mutual</dd></div>
+    <div><dt>Sliding scale</dt><dd>No</dd></div>
+    <div><dt>Hours</dt><dd>Tuesday to Thursday, 1 to 8 p.m. Saturday, 9 a.m. to 1 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>Tuesday to Thursday until 8 p.m.</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 30</dd></div>
+    <div><dt>How</dt><dd>In person and virtual</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Pennsylvania, Delaware</dd></div>
+    <div><dt>Languages</dt><dd>English</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=3">Request a first appointment with the therapist in Room 3</a>
+</article><article class="entry" id="room-4" data-with="anxiety mood" data-ins="ardmoor tessaly" data-scale="yes" data-when="evening" data-how="person virtual">
+  <h3>The therapist in Room 4</h3>
+  <p class="lic">Professional counselor (LPC)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Anxiety and worry, Low mood</dd></div>
+    <div><dt>In their words</dt><dd>I like to start with what your week actually looks like. I&rsquo;m fairly direct and I use plain language. Tell me if I&rsquo;m going too fast.</dd></div>
+    <div><dt>Methods offered</dt><dd>Acceptance and commitment therapy, cognitive behavioral therapy</dd></div>
+    <div><dt>Insurance</dt><dd>Ardmoor Health, Tessaly Care</dd></div>
+    <div><dt>Sliding scale</dt><dd>Yes</dd></div>
+    <div><dt>Hours</dt><dd>Monday and Wednesday, 2 to 8 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>Monday and Wednesday until 8 p.m.</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 16</dd></div>
+    <div><dt>How</dt><dd>In person and virtual</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Pennsylvania</dd></div>
+    <div><dt>Languages</dt><dd>English</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=4">Request a first appointment with the therapist in Room 4</a>
+</article><article class="entry" id="room-5" data-with="teens anxiety mood" data-ins="ardmoor penfield tessaly" data-scale="yes" data-when="day evening" data-how="person">
+  <h3>The therapist in Room 5</h3>
+  <p class="lic">Social worker (LCSW)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Teenagers, 13 to 17, Anxiety and worry, Low mood</dd></div>
+    <div><dt>In their words</dt><dd>Most of the people I see are teenagers. I tell them on the first day what stays between us and what doesn&rsquo;t, and I go through the same thing with their parents.</dd></div>
+    <div><dt>Methods offered</dt><dd>Cognitive behavioral therapy, family systems therapy</dd></div>
+    <div><dt>Insurance</dt><dd>Ardmoor Health, Penfield Mutual, Tessaly Care</dd></div>
+    <div><dt>Sliding scale</dt><dd>Yes</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Thursday, noon to 7 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>Monday to Thursday until 7 p.m.</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 23</dd></div>
+    <div><dt>How</dt><dd>In person</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Sees clients in person in Pennsylvania only</dd></div>
+    <div><dt>Languages</dt><dd>English</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=5">Request a first appointment with the therapist in Room 5</a>
+</article><article class="entry" id="room-6" data-with="trauma grief" data-ins="" data-scale="no" data-when="day" data-how="person virtual">
+  <h3>The therapist in Room 6</h3>
+  <p class="lic">Psychologist (PsyD)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Trauma, Grief and loss</dd></div>
+    <div><dt>In their words</dt><dd>I go slowly. We won&rsquo;t go into the details of what happened until you decide to, and for some people that is never. A lot of my work is about the present.</dd></div>
+    <div><dt>Methods offered</dt><dd>Cognitive processing therapy, EMDR, psychodynamic therapy</dd></div>
+    <div><dt>Insurance</dt><dd>Out of network only. Superbill provided</dd></div>
+    <div><dt>Sliding scale</dt><dd>No</dd></div>
+    <div><dt>Hours</dt><dd>Tuesday and Friday, 9 a.m. to 3 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>None</dd></div>
+    <div><dt>Availability</dt><dd>No openings at present. Waitlist open. Intake can tell you where you would be on it</dd></div>
+    <div><dt>How</dt><dd>In person and virtual</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Pennsylvania, New Jersey, Maryland</dd></div>
+    <div><dt>Languages</dt><dd>English</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=6">Request a first appointment with the therapist in Room 6</a>
+</article><article class="entry" id="room-7" data-with="anxiety grief" data-ins="penfield tessaly" data-scale="yes" data-when="evening weekend" data-how="virtual">
+  <h3>The therapist in Room 7</h3>
+  <p class="lic">Professional counselor (LPC)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Anxiety and worry, Grief and loss</dd></div>
+    <div><dt>In their words</dt><dd>I see everyone by video, from Room 7. Have somewhere private to sit, and if your only private place is a parked car, that&rsquo;s fine with me.</dd></div>
+    <div><dt>Methods offered</dt><dd>Acceptance and commitment therapy, narrative therapy</dd></div>
+    <div><dt>Insurance</dt><dd>Penfield Mutual, Tessaly Care</dd></div>
+    <div><dt>Sliding scale</dt><dd>Yes</dd></div>
+    <div><dt>Hours</dt><dd>Monday to Thursday, 4 to 8 p.m. Saturday, 9 a.m. to 1 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>Monday to Thursday until 8 p.m.</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 9</dd></div>
+    <div><dt>How</dt><dd>Virtual only</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Pennsylvania</dd></div>
+    <div><dt>Languages</dt><dd>English, Spanish</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=7">Request a first appointment with the therapist in Room 7</a>
+</article><article class="entry" id="room-8" data-with="couples trauma" data-ins="tessaly" data-scale="no" data-when="day weekend" data-how="person virtual">
+  <h3>The therapist in Room 8</h3>
+  <p class="lic">Marriage and family therapist (LMFT)</p>
+  <dl>
+    <div><dt>Works with</dt><dd>Couples and relationships, Trauma</dd></div>
+    <div><dt>In their words</dt><dd>I work with couples and with adults on their own. I&rsquo;ll ask about your family early on, and I&rsquo;ll tell you why I&rsquo;m asking.</dd></div>
+    <div><dt>Methods offered</dt><dd>Emotionally focused therapy, EMDR</dd></div>
+    <div><dt>Insurance</dt><dd>Tessaly Care</dd></div>
+    <div><dt>Sliding scale</dt><dd>No</dd></div>
+    <div><dt>Hours</dt><dd>Wednesday and Friday, 9 a.m. to 4 p.m. Saturday, 9 a.m. to 1 p.m.</dd></div>
+    <div><dt>Evenings</dt><dd>None</dd></div>
+    <div><dt>Availability</dt><dd>First appointment available the week of November 30</dd></div>
+    <div><dt>How</dt><dd>In person and virtual</dd></div>
+    <div><dt>Licensed for virtual in</dt><dd>Pennsylvania, New Jersey, Delaware</dd></div>
+    <div><dt>Languages</dt><dd>English, ASL</dd></div>
+  </dl>
+  <a class="more" href="contact.html#room=8">Request a first appointment with the therapist in Room 8</a>
+</article>
+    </div>
+    <p class="fit-note">We can&rsquo;t tell you what your plan covers. Only your insurer can do that. To see someone by video you must be physically in a state where that person is licensed at the time of the session.</p>
+    
   </div>
 </section>
+<section class="sec" id="table"><div class="wrap">
+  <table class="people">
+    <caption><strong>Everyone in one table</strong>The same information as the list above, in the same order. Checked on November 2, 2026 by the intake coordinator.</caption>
+    <thead><tr><th scope="col">Clinician</th><th scope="col">License</th><th scope="col">Works with</th><th scope="col">Insurance</th><th scope="col">Sliding scale</th><th scope="col">Availability</th><th scope="col">Evenings</th><th scope="col">In person or virtual</th><th scope="col">States licensed</th><th scope="col">Languages</th></tr></thead>
+    <tbody><tr><th scope="row">Room 1</th><td data-label="License">Psychologist (PhD)</td><td data-label="Works with">Anxiety and worry, Trauma</td><td data-label="Insurance">Ardmoor Health, Penfield Mutual</td><td data-label="Sliding scale">Yes</td><td data-label="Availability">First appointment available the week of November 16</td><td data-label="Evenings">Tuesday and Thursday until 8 p.m.</td><td data-label="In person or virtual">In person and virtual</td><td data-label="States licensed">Pennsylvania, New Jersey</td><td data-label="Languages">English</td></tr><tr><th scope="row">Room 2</th><td data-label="License">Social worker (LCSW)</td><td data-label="Works with">Grief and loss, Low mood</td><td data-label="Insurance">Ardmoor Health, Tessaly Care</td><td data-label="Sliding scale">Yes</td><td data-label="Availability">First appointment available the week of November 9</td><td data-label="Evenings">None</td><td data-label="In person or virtual">In person</td><td data-label="States licensed">In person only</td><td data-label="Languages">English, Spanish</td></tr><tr><th scope="row">Room 3</th><td data-label="License">Marriage and family therapist (LMFT)</td><td data-label="Works with">Couples and relationships, Low mood</td><td data-label="Insurance">Penfield Mutual</td><td data-label="Sliding scale">No</td><td data-label="Availability">First appointment available the week of November 30</td><td data-label="Evenings">Tuesday to Thursday until 8 p.m.</td><td data-label="In person or virtual">In person and virtual</td><td data-label="States licensed">Pennsylvania, Delaware</td><td data-label="Languages">English</td></tr><tr><th scope="row">Room 4</th><td data-label="License">Professional counselor (LPC)</td><td data-label="Works with">Anxiety and worry, Low mood</td><td data-label="Insurance">Ardmoor Health, Tessaly Care</td><td data-label="Sliding scale">Yes</td><td data-label="Availability">First appointment available the week of November 16</td><td data-label="Evenings">Monday and Wednesday until 8 p.m.</td><td data-label="In person or virtual">In person and virtual</td><td data-label="States licensed">Pennsylvania</td><td data-label="Languages">English</td></tr><tr><th scope="row">Room 5</th><td data-label="License">Social worker (LCSW)</td><td data-label="Works with">Teenagers, 13 to 17, Anxiety and worry, Low mood</td><td data-label="Insurance">Ardmoor Health, Penfield Mutual, Tessaly Care</td><td data-label="Sliding scale">Yes</td><td data-label="Availability">First appointment available the week of November 23</td><td data-label="Evenings">Monday to Thursday until 7 p.m.</td><td data-label="In person or virtual">In person</td><td data-label="States licensed">In person only</td><td data-label="Languages">English</td></tr><tr><th scope="row">Room 6</th><td data-label="License">Psychologist (PsyD)</td><td data-label="Works with">Trauma, Grief and loss</td><td data-label="Insurance">Out of network only. Superbill provided</td><td data-label="Sliding scale">No</td><td data-label="Availability">No openings at present. Waitlist open. Intake can tell you where you would be on it</td><td data-label="Evenings">None</td><td data-label="In person or virtual">In person and virtual</td><td data-label="States licensed">Pennsylvania, New Jersey, Maryland</td><td data-label="Languages">English</td></tr><tr><th scope="row">Room 7</th><td data-label="License">Professional counselor (LPC)</td><td data-label="Works with">Anxiety and worry, Grief and loss</td><td data-label="Insurance">Penfield Mutual, Tessaly Care</td><td data-label="Sliding scale">Yes</td><td data-label="Availability">First appointment available the week of November 9</td><td data-label="Evenings">Monday to Thursday until 8 p.m.</td><td data-label="In person or virtual">Virtual only</td><td data-label="States licensed">Pennsylvania</td><td data-label="Languages">English, Spanish</td></tr><tr><th scope="row">Room 8</th><td data-label="License">Marriage and family therapist (LMFT)</td><td data-label="Works with">Couples and relationships, Trauma</td><td data-label="Insurance">Tessaly Care</td><td data-label="Sliding scale">No</td><td data-label="Availability">First appointment available the week of November 30</td><td data-label="Evenings">None</td><td data-label="In person or virtual">In person and virtual</td><td data-label="States licensed">Pennsylvania, New Jersey, Delaware</td><td data-label="Languages">English, ASL</td></tr></tbody>
+  </table>
+</div></section>
+<section class="sec"><div class="wrap ledger"><h2>If nobody here fits</h2><div><p>Call the intake coordinator on <a href="tel:+16105550147">(610) 555-0147</a>. The coordinator keeps a list of therapists outside this practice, reviewed every three months, and will give you three names that fit what you need. You don&rsquo;t have to be a client here, and you don&rsquo;t have to explain why you&rsquo;re asking.</p></div></div></section>
 </main>
-<footer class="site-footer">
+<section class="help-foot" aria-labelledby="help-foot-h">
   <div class="wrap">
-    <p class="foot-big">Whenever you&rsquo;re ready,<br><a href="contact.html">we&rsquo;re here to listen.</a></p>
+    <h2 id="help-foot-h">If you need help now</h2>
+    <p>Call or text <a href="tel:988">988</a> at any hour. If you or someone else is in immediate danger, call <a href="tel:911">911</a>. Haverlock doesn&rsquo;t provide emergency or after-hours care. <a href="crisis.html">What to do if you need help now</a></p>
+  </div>
+</section>
+<footer class="foot">
+  <div class="wrap">
     <div class="foot-grid">
-      <div class="foot-brand">
-        <a class="brand" href="index.html"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8z" fill="currentColor" opacity=".22"/><path d="M12 2.8c3.9 2.8 5.6 6 5.6 9.4S15.9 18.8 12 21.2c-3.9-2.4-5.6-5.6-5.6-9S8.1 5.6 12 2.8zM12 8v13.2" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/></svg><span>Haverlock Therapy Group</span></a>
-        <p>Individual, couples and group therapy for adults, in person and online. A fictional practice, built as a demonstration website.</p>
+      <div>
+        <h2>Haverlock Therapy Group</h2>
+        <address>214 Pruett Street<br>Carrow Mills, Pennsylvania<br><a href="tel:+16105550147">(610) 555-0147</a><br><a href="mailto:intake@haverlocktherapy.com">intake@haverlocktherapy.com</a></address>
+        <p>The intake coordinator answers the phone Monday to Friday, 9 a.m. to 5 p.m., and replies to messages within one working day.</p>
       </div>
       <div>
-        <h2>Visit</h2>
-        <p>48 Haverlock Street, Suite 2<br>Anytown, ST 00000</p>
-        <p class="muted small">Mon&ndash;Thu 8am&ndash;8pm<br>Fri 8am&ndash;4pm &middot; Sat by arrangement</p>
-      </div>
-      <div>
-        <h2>Contact</h2>
+        <h2>Pages</h2>
         <ul>
-          <li><a href="tel:+15555550142">(555) 555-0142</a></li>
-          <li><a href="mailto:hello@haverlock.example">hello@haverlock.example</a></li>
-          <li><a href="contact.html">Request an appointment</a></li>
+          <li><a href="find-a-therapist.html">Find a therapist</a></li>
+          <li><a href="services.html">What we offer</a></li>
+          <li><a href="first-appointment.html">First appointment</a></li>
+          <li><a href="crisis.html">If you need help now</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
         </ul>
       </div>
       <div>
-        <h2>Explore</h2>
+        <h2>Money</h2>
+        <ul><li><a href="fees-and-insurance.html">Fees, insurance and the sliding scale</a></li></ul>
+        <p>We take cards, HSA and FSA cards, and checks. Cancel with 24 hours&rsquo; notice and there is no charge.</p>
+      </div>
+      <div>
+        <h2>Legal</h2>
         <ul>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="services.html">Services</a></li>
-          <li><a href="find-a-therapist.html">Find a therapist</a></li>
-          <li><a href="fees-and-insurance.html">Fees &amp; insurance</a></li>
-          <li><a href="first-appointment.html">Your first appointment</a></li>
-          <li><a href="crisis.html">If you need help now</a></li>
+          <li><a href="privacy.html">Privacy</a></li>
+          <li><a href="terms.html">Terms</a></li>
+          <li><a href="accessibility.html">Accessibility</a></li>
+          <li><a href="privacy.html#notice">Notice of Privacy Practices</a></li>
         </ul>
       </div>
     </div>
-    <p class="foot-crisis">We are not an emergency service and messages are read during office hours. If you&rsquo;re in crisis, <a href="tel:988">call</a> or <a href="sms:988">text 988</a>, or call <a href="tel:911">911</a> in an emergency.</p>
-    <div class="foot-legal">
-      <p>&copy; <span data-year>2026</span> Haverlock Therapy Group &middot; Fictional demo practice</p>
-      <p><a href="privacy.html">Privacy</a> &nbsp;&middot;&nbsp; <a href="terms.html">Terms</a> &nbsp;&middot;&nbsp; <a href="accessibility.html">Accessibility</a></p>
+    <div class="foot-strip">
+      <p>Our clinicians are licensed in Pennsylvania as psychologists, social workers (LCSW), marriage and family therapists (LMFT) and professional counselors (LPC). Each person&rsquo;s license and the states where they can see virtual clients are listed with their entry. We can&rsquo;t tell you what your plan covers.</p>
+      <p>&copy; <span data-year>2026</span> Haverlock Therapy Group</p>
     </div>
   </div>
 </footer>
-<p class="demo-marker"><b>DEMO</b> &mdash; ThinkFirst Studios &middot; [Your name here]</p>
-<script src="script.js?v=20261104b" defer></script>
 </body>
 </html>

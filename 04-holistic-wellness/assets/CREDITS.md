@@ -4,22 +4,25 @@ All photographs are real stock from Pexels (Pexels license: commercial use, no a
 
 | File stem | Pexels ID | URL | Shows | Used on |
 |---|---|---|---|---|
-| candle | 5475164 | https://www.pexels.com/photo/close-up-photo-of-burning-candle-in-dark-background-5475164/ | One lit candle with its reflection | Hero, pacer |
+| lake-sunset | 54379 | https://www.pexels.com/photo/silhouette-of-person-sitting-beside-body-of-water-54379/ | One adult seated on the shore, seen from behind, lake and treeline at sunset | Hero |
+| light-through-trees | 28965199 | https://www.pexels.com/photo/sunlight-streaming-through-forest-trees-at-dusk-28965199/ | Low sun through dark trees | Home, modalities |
+| golden-water | 18119018 | https://www.pexels.com/photo/close-up-of-the-sea-surface-reflecting-the-sunset-light-18119018/ | Sunset light on water; also the texture for the touchable water | Booking band, every page |
+| dark-ripples | 8891103 | https://www.pexels.com/photo/ripples-on-the-dark-water-surface-8891103/ | Gold light on dark rippled water | Fees, regulation |
+| dark-rays | 9541343 | https://www.pexels.com/photo/sun-rays-peeking-through-the-dark-forest-9541343/ | Sun rays through dark forest | a-session |
+| treeline-sunset | 15508375 | https://www.pexels.com/photo/silhouette-of-forest-at-sunset-15508375/ | Dark branches against a low sun | Stone scene, book, privacy, terms |
+| cairn-sunset | 6031341 | https://www.pexels.com/photo/gray-stones-on-beach-during-sunset-6031341/ | A real stack of stones on a beach at sunset; the still shown when the 3D does not run | Home |
+| stairs, stairs-wide | 34888409 | https://www.pexels.com/photo/dimly-lit-wooden-staircase-with-shadows-34888409/ | Wooden stairs; dark teal walls fully graded out | Home, accessibility |
+| lantern-frontage, lantern-wide | 15665712 | https://www.pexels.com/photo/lamp-light-over-building-wall-at-night-15665712/ | Street lantern on a building front; cropped to exclude a man at a window | Home, contact |
+| lamp-through-door, lamp-wide | 17027430 | https://www.pexels.com/photo/lamp-with-yellow-light-in-dark-room-17027430/ | A room through a half-open door, one small lamp | Modalities, about |
 | table-made-up | 35884499 | https://www.pexels.com/photo/cozy-spa-massage-table-with-candle-and-decor-35884499/ | Massage table, sheet, rolled towel; bright original graded to low light | Home, modalities |
-| lamp-through-door | 17027430 | https://www.pexels.com/photo/lamp-with-yellow-light-in-dark-room-17027430/ | A room through a half-open door, one small lamp | Modalities, about |
-| towel-ladder | 18786198 | https://www.pexels.com/photo/towel-in-a-bathroom-in-sunlight-18786198/ | Towel on a ladder rail, light across a wall; bath cropped out | Home, a-session |
+| towel-ladder | 18786198 | https://www.pexels.com/photo/towel-in-a-bathroom-in-sunlight-18786198/ | Towel on a ladder rail, light across a wall; bath cropped out | Home |
 | chair-in-light | 3039659 | https://www.pexels.com/photo/empty-brown-wooden-armless-chair-3039659/ | Plain wooden chair in a pool of light | Modalities |
-| stairs | 34888409 | https://www.pexels.com/photo/dimly-lit-wooden-staircase-with-shadows-34888409/ | Wooden stairs; dark teal walls fully graded out | Home, accessibility |
 | jars | 4044070 | https://www.pexels.com/photo/brown-and-white-food-in-clear-glass-jars-4044070/ | Unlabeled jars of dried plant material | Modalities |
-| fern-shadow | 9419187 | https://www.pexels.com/photo/shadow-of-leaves-on-the-wall-9419187/ | Botanical as shadow on a wall | Regulation |
-| branch-silhouette | 14754738 | https://www.pexels.com/photo/silhouetted-plant-leaves-and-shadows-on-the-wall-14754738/ | Botanical as silhouette; cropped to exclude a person's shadow | Book |
-| lantern-frontage | 15665712 | https://www.pexels.com/photo/lamp-light-over-building-wall-at-night-15665712/ | Street lantern on a building front; cropped to exclude a man at a window | Home, contact |
-| teapot | 15675493 | https://www.pexels.com/photo/tea-cup-and-teapot-15675493/ | Cup and teapot on a wooden tray | Home, fees |
-| incense | 29038866 | https://www.pexels.com/photo/elegant-incense-smoke-on-black-background-29038866/ | Incense stick and smoke on a dark wall | Booking band, every page |
+| teapot | 15675493 | https://www.pexels.com/photo/tea-cup-and-teapot-15675493/ | Cup and teapot on a wooden tray | Home |
 | oiled-wood | 4709011 | https://www.pexels.com/photo/dark-wood-texture-4709011/ | Dark wood grain, close | Strip above the footer, every page |
 
 ## Fonts
 Podkova and Gentium Book Plus, SIL Open Font License, self-hosted as woff2 in `assets/fonts/` (latin subset, downloaded at build time).
 
-## Authored
-`assets/plume.svg` is the motion layer for the one smoke plume. It is not a photograph and does not stand in for one: the photograph beneath it is real.
+## Authored in code
+`assets/js/stones.js` generates the 3D stone stack from geometry and shaders; it uses no photograph. `assets/js/water.js` displaces the real golden-water photograph, which is embedded in `assets/js/water-texture.js`. The beams and motes are CSS overlays on real photographs and do not stand in for any.

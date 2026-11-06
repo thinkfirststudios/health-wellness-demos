@@ -2,11 +2,11 @@
 
 All photographs are from Pexels under the Pexels licence (commercial use, no attribution required). Each was cropped and graded to the file in linear light: one cool, low-key evening exposure that keeps natural material colour. Green, teal and blue hues are neutralised selectively, and orange is trimmed on four images so wood and brass do not read as gold. No duotone, no vignette, no retouching, no background removal.
 
-The three people are stock models in everyday professional clothes. They are not staff of this fictional practice, carry no names, and no role is attached to any of them.
+The three people are stock photographs. Two wear everyday professional clothes; the hero wears a white coat, allowed for that slot only. They are not staff of this fictional practice, carry no names, and no role is attached to any of them.
 
 | File stem | Pexels ID | Source URL | Shows |
 |---|---|---|---|
-| person-seated | 34381970 | https://www.pexels.com/photo/professional-portrait-of-smiling-businesswoman-34381970/ | Adult woman, black blazer, grey studio backdrop. Cropped above the forearm so nothing reads as folded arms |
+| person-doctor | 15752232 | https://www.pexels.com/photo/portrait-of-doctor-15752232/ | Adult woman, white coat over a grey top, plain pale wall, looking at camera. Cropped at the chest, above her forearms. No stethoscope, no badge |
 | person-tablet | 2381094 | https://www.pexels.com/photo/woman-standing-while-holding-tablet-2381094/ | Adult woman, pale grey blazer over a black top, reading a tablet by a window |
 | person-shirt | 29856511 | https://www.pexels.com/photo/professional-portrait-of-a-smiling-man-in-business-attire-29856511/ | Adult man, open-collared shirt, plain wall. Blue shirt neutralised to grey by the grade |
 | room-treatment | 16571732 | https://www.pexels.com/photo/a-modern-doctors-office-16571732/ | Empty treatment room: couch with folded towel, cabinet, curtain. Cropped from the 4000px source to exclude the lamp, wall-arm device, floor cables, products and a dried sprig |

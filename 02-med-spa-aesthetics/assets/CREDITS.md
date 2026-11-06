@@ -1,13 +1,18 @@
 # Photo and font credits
 
-All photographs are from Pexels under the Pexels licence (commercial use, no attribution required). Each was cropped and graded to the file in linear light: one cool, low-key evening exposure that keeps natural material colour. Green, teal and blue hues are neutralised selectively, and orange is trimmed on four images so wood and brass do not read as gold. No duotone, no vignette. No person appears in any frame.
+All photographs are from Pexels under the Pexels licence (commercial use, no attribution required). Each was cropped and graded to the file in linear light: one cool, low-key evening exposure that keeps natural material colour. Green, teal and blue hues are neutralised selectively, and orange is trimmed on four images so wood and brass do not read as gold. No duotone, no vignette, no retouching, no background removal.
+
+The three people are stock models in everyday professional clothes. They are not staff of this fictional practice, carry no names, and no role is attached to any of them.
 
 | File stem | Pexels ID | Source URL | Shows |
 |---|---|---|---|
+| person-seated | 34381970 | https://www.pexels.com/photo/professional-portrait-of-smiling-businesswoman-34381970/ | Adult woman, black blazer, grey studio backdrop. Cropped above the forearm so nothing reads as folded arms |
+| person-tablet | 2381094 | https://www.pexels.com/photo/woman-standing-while-holding-tablet-2381094/ | Adult woman, pale grey blazer over a black top, reading a tablet by a window |
+| person-shirt | 29856511 | https://www.pexels.com/photo/professional-portrait-of-a-smiling-man-in-business-attire-29856511/ | Adult man, open-collared shirt, plain wall. Blue shirt neutralised to grey by the grade |
 | room-treatment | 16571732 | https://www.pexels.com/photo/a-modern-doctors-office-16571732/ | Empty treatment room: couch with folded towel, cabinet, curtain. Cropped from the 4000px source to exclude the lamp, wall-arm device, floor cables, products and a dried sprig |
 | room-consulting | 18641848 | https://www.pexels.com/photo/empty-chairs-by-white-wall-18641848/ | Two empty leather and steel chairs |
 | room-waiting | 16625884 | https://www.pexels.com/photo/chairs-and-coffee-table-16625884/ | Two empty chairs and a round side table |
-| room-second | 263201 | https://www.pexels.com/photo/empty-white-bed-near-window-263201/ | Second treatment room: couch, wall basin, low step. Replaces 7789616, which 01-doctor-practice also uses |
+| room-second | 263201 | https://www.pexels.com/photo/empty-white-bed-near-window-263201/ | Second treatment room: couch, wall basin, low step |
 | detail-instruments | 7108116 | https://www.pexels.com/photo/silver-needle-holder-in-close-up-shot-7108116/ | Steel scissors and forceps on a drape. Blue drape neutralised; tips cropped out |
 | detail-towels | 7691101 | https://www.pexels.com/photo/white-towels-on-white-table-7691101/ | Folded white towels |
 | detail-water | 35592218 | https://www.pexels.com/photo/minimalist-glass-of-water-on-wooden-table-35592218/ | Glass of water on a wooden table |

@@ -98,6 +98,39 @@
     });
   });
 
+  // Treatment carousel on phones. With script off, every card simply stacks.
+  var car = document.querySelector('[data-carousel]');
+  if (car) {
+    var list = car.querySelector('.svc');
+    var ctrl = car.querySelector('.svc-ctrl');
+    var prev = car.querySelector('[data-prev]');
+    var next = car.querySelector('[data-next]');
+    var out = car.querySelector('output');
+    var count = list.children.length;
+    car.classList.add('js-carousel');
+    ctrl.hidden = false;
+    var step = function () { return list.children[0].offsetWidth + 12; };
+    var at = function () { return Math.round(list.scrollLeft / step()); };
+    var paint = function () {
+      var i = at();
+      out.textContent = (i + 1) + ' of ' + count;
+      prev.disabled = i <= 0;
+      next.disabled = i >= count - 1;
+    };
+    var go = function (i) {
+      list.scrollTo({ left: Math.max(0, Math.min(count - 1, i)) * step(), behavior: reduce ? 'auto' : 'smooth' });
+    };
+    prev.addEventListener('click', function () { go(at() - 1); });
+    next.addEventListener('click', function () { go(at() + 1); });
+    list.addEventListener('scroll', paint, { passive: true });
+    list.setAttribute('tabindex', '0');
+    list.addEventListener('keydown', function (e) {
+      if (e.key === 'ArrowLeft') { e.preventDefault(); go(at() - 1); }
+      if (e.key === 'ArrowRight') { e.preventDefault(); go(at() + 1); }
+    });
+    paint();
+  }
+
   // Forms stay on the page: nothing is transmitted from this site
   document.querySelectorAll('form[data-form]').forEach(function (form) {
     form.addEventListener('submit', function (e) {

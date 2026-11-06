@@ -174,7 +174,7 @@
   if (bookForm) {
     var select = bookForm.querySelector("#modality");
     var chosen = document.querySelector("[data-chosen]");
-    var names = { "acupuncture": "Acupuncture", "massage": "Massage", "consultation": "Herbal and dietary consultation", "breathwork": "Breathwork" };
+    var names = { "acupuncture": "Acupuncture", "breathwork": "Breathwork" };
     var setChosen = function () { if (chosen) chosen.textContent = names[select.value] || "Not chosen yet"; };
     var want = new URLSearchParams(window.location.search).get("modality");
     if (want && names[want]) select.value = want;

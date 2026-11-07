@@ -142,29 +142,33 @@ main:focus { outline: none; }
 .scene-bg > img { width: 100%; height: 100%; object-fit: cover; }
 .scene-scrim { position: absolute; inset: 0; z-index: -1; pointer-events: none; }
 
-/* Hero: the photograph is left exactly as shot, in its own panel; the type sits on the ground beside it */
+/* Hero: the photograph runs full height on the right and falls away into the ground; the type sits in the dark of the room */
 .hero { position: relative; margin-top: calc(var(--bar) * -1); }
-.hero-frame { --fx: .5; --py: 46%; position: relative; isolation: isolate; overflow: hidden; background: var(--ground); container-type: size; height: max(100svh, 46rem); }
-.hero-stage { position: absolute; z-index: -3; top: var(--bar); right: 0; bottom: 0; width: 54cqw; }
-.hero-stage > img { width: 100%; height: 100%; object-fit: cover; object-position: 74% 50%; }
-.hero-copy { position: relative; display: grid; justify-items: start; text-align: left; gap: 1.1rem; min-height: 100cqh; align-content: center; padding-top: var(--bar); padding-bottom: 7cqh; }
+.hero-frame { position: relative; isolation: isolate; overflow: hidden; background: var(--ground); container-type: size; height: max(100svh, 46rem); }
+.hero-stage { position: absolute; z-index: -3; top: 0; bottom: 0; right: 0; width: max(150cqh, 74cqw); -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 16%); mask-image: linear-gradient(90deg, transparent 0, #000 16%); }
+.hero-stage > img { width: 100%; height: 100%; object-fit: cover; object-position: 60% 100%; }
+/* the nav sits over floor reflections: a fall of the ground colour behind it, full width so no shape shows */
+.hero-frame::before { content: ""; position: absolute; z-index: -2; inset: 0 0 auto; height: calc(var(--bar) + 2.5rem); background: linear-gradient(180deg, rgba(23, 18, 15, .9) 0, rgba(23, 18, 15, .84) 72%, rgba(23, 18, 15, 0) 100%); pointer-events: none; }
+.hero-copy { position: relative; display: grid; justify-items: start; text-align: left; gap: 1rem; padding-top: calc(var(--bar) + clamp(.5rem, 3.5cqh, 3rem)); }
 .hero-copy > * { max-width: min(38cqw, 38rem); }
 .hero-copy h1 { font-size: clamp(4rem, 6.6vw, 7rem); line-height: 1; }
 .descriptor { margin: 0; font-family: var(--ui); font-weight: 500; font-size: clamp(1.05rem, 1.7vw, 1.4rem); line-height: 1.35; }
 .hero-copy .lede { margin: 0; }
 .hero-copy .btn-row { justify-content: flex-start; align-items: center; }
 .hero-copy .tel { margin-left: .5rem; }
-/* narrower than the type and the panel can share: copy on top, photograph below it */
+/* the number is in the top bar on desktop, and here it would land on the patch of sun */
+@media (min-width: 1100px) and (min-aspect-ratio: 5/4) { .hero-copy .tel { display: none; } }
+/* narrower than the type and the figure can share: copy on top, photograph below it */
 @media (max-width: 1099px), (max-aspect-ratio: 5/4) {
   .hero-frame { height: max(100svh, 60rem); }
-  .hero-stage { top: 27rem; width: 100%; }
-  .hero-copy { min-height: 0; align-content: start; padding-bottom: 0; padding-top: calc(var(--bar) + 1.5rem); justify-items: center; text-align: center; }
+  .hero-stage { top: 27rem; width: 100%; -webkit-mask-image: linear-gradient(180deg, transparent 0, #000 14%); mask-image: linear-gradient(180deg, transparent 0, #000 14%); }
+  .hero-stage > img { object-position: 62% 100%; }
+  .hero-copy { padding-top: calc(var(--bar) + 1.5rem); justify-items: center; text-align: center; }
   .hero-copy > * { max-width: 38rem; }
   .hero-copy .btn-row { justify-content: center; }
   .hero-copy .btn { padding-inline: 1.15rem; }
 }
-@media (max-width: 767px) { .hero-frame { height: max(100svh, 57rem); } .hero-stage { top: 32rem; } .hero-copy .tel { margin-left: 0; } }
-
+@media (max-width: 767px) { .hero-stage { top: 32rem; } .hero-copy .tel { margin-left: 0; } }
 
 .pacer-note { background: var(--ground); padding: 1.4rem var(--gutter) 1.6rem; display: grid; gap: .5rem; }
 .pacer-note h2 { font-family: var(--ui); font-size: 1.3rem; font-weight: 600; letter-spacing: 0; line-height: 1.2; }

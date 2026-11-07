@@ -4,7 +4,7 @@ All photographs are real stock from Pexels (Pexels license: commercial use, no a
 
 | File stem | Pexels ID | URL | Shows | Used on |
 |---|---|---|---|---|
-| sunlit-breath | 11582029 | https://www.pexels.com/photo/beautiful-woman-with-her-eyes-closed-11582029/ | A woman in profile, eyes closed, low sun on her face and hair. Colour untouched; mirrored so she faces the type | Hero |
+| placing-needles | 4353249 | https://www.pexels.com/photo/hands-inserting-needles-on-the-person-s-back-4353249/ | Hands placing acupuncture needles in a person's upper back, face turned away. Colour as shot apart from the cool cast taken out of the white wall. Shows someone receiving care: exception chosen by Alex for 04 | Hero |
 | light-through-trees | 28965199 | https://www.pexels.com/photo/sunlight-streaming-through-forest-trees-at-dusk-28965199/ | Low sun through dark trees | Home, modalities |
 | golden-water | 18119018 | https://www.pexels.com/photo/close-up-of-the-sea-surface-reflecting-the-sunset-light-18119018/ | Sunset light on water; also the texture for the touchable water | Booking band, every page |
 | dark-ripples | 8891103 | https://www.pexels.com/photo/ripples-on-the-dark-water-surface-8891103/ | Gold light on dark rippled water | Fees, regulation |

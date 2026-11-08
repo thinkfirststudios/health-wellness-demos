@@ -6,7 +6,7 @@ The three people are stock photographs. Two wear everyday professional clothes; 
 
 | File stem | Pexels ID | Source URL | Shows |
 |---|---|---|---|
-| person-doctor | 15752232 | https://www.pexels.com/photo/portrait-of-doctor-15752232/ | Adult woman, white coat over a grey top, plain pale wall, looking at camera. Cropped at the chest, above her forearms. No stethoscope, no badge |
+| person-doctor | 3714743 | https://www.pexels.com/photo/woman-in-white-medical-robe-3714743/ | Adult woman, white coat over a dark top, hair in a high bun, in profile against a pale wall with two blurred framed prints. Teal top and earrings neutralised to grey by the grade. No stethoscope, no badge |
 | person-tablet | 2381094 | https://www.pexels.com/photo/woman-standing-while-holding-tablet-2381094/ | Adult woman, pale grey blazer over a black top, reading a tablet by a window |
 | person-shirt | 29856511 | https://www.pexels.com/photo/professional-portrait-of-a-smiling-man-in-business-attire-29856511/ | Adult man, open-collared shirt, plain wall. Blue shirt neutralised to grey by the grade |
 | room-treatment | 16571732 | https://www.pexels.com/photo/a-modern-doctors-office-16571732/ | Empty treatment room: couch with folded towel, cabinet, curtain. Cropped from the 4000px source to exclude the lamp, wall-arm device, floor cables, products and a dried sprig |
